@@ -26,13 +26,13 @@ h3::after{
     height: 150px;
 }
 .TransparentBackGround{
-    background:rgb(116, 200, 234,0.5);
+    background:rgba(255, 255, 255, 0.541);
     width: 100%;
     max-width: 1280px;
     margin-top: 60px;
 }
 .FullTransparentBackGround{
-    background:rgb(116, 200, 234,0.5);
+    background:rgba(255, 255, 255, 0.541);
     width: 100%;
     max-width: 100%;
     margin-top: 60px;
