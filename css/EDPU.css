@@ -68,8 +68,6 @@ background-color: rgba(255,218,150,1);
     background-color: rgba(116,200,234,1);
 }
 
-@font-face {
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;100;700;900&display=swap');}
 body{
     font-family: 'Montserrat', sans-serif;
 
