@@ -33,7 +33,7 @@
   function generarEnlaceWhatsApp() {
     // Obtener valores de los campos del formulario
     var nombre = document.getElementById('txtNombre').value;
-    var whatsapp = document.getElementById('txtWhatsApp').value;
+    var whatsapp = document.getElementById('txtCelular') ? document.getElementById('txtCelular').value : document.getElementById('txtWhatsApp') ? document.getElementById('txtWhatsApp').value : '';
     var email = document.getElementById('txtCorreo').value;
     var direccion = document.getElementById('txtDireccion').value;
 
