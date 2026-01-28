@@ -155,3 +155,82 @@ box-shadow: 0 1px 0 0 #74c8ea;
     height: 8px;    /* Tamaño del scroll en horizontal */
 
 }
+
+/* Navbar improvements: spacing, color and hover */
+.nav-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-content {
+    padding: 0 1.25rem;
+}
+.nav-content ul.centered {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 0;
+}
+.nav-content ul.centered li a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #263238; /* darker grey for readability */
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+.nav-content ul.centered li a:hover,
+.nav-content ul.centered li a:focus {
+    background: rgba(255,255,255,0.12);
+    color: #0d47a1; /* deep blue accent */
+    transform: translateY(-1px);
+}
+
+/* Slightly refined gradients for a modern look */
+.degradadoAzulAmarillo{
+    background: linear-gradient(90deg, #64b5f6 20%, #ffd57e 100%);
+}
+.degradadoAzulBlancoAmarillo{
+    background: linear-gradient(90deg, #64b5f6 6%, #ffffff 30%, #ffd57e 100%);
+}
+.degradadoAmarilloBlancoAzul{
+    background: linear-gradient(90deg, #ffd57e 6%, #ffffff 30%, #64b5f6 100%);
+}
+.degradadoAmarilloAzul{
+    background: linear-gradient(90deg, #ffd57e 6%, #64b5f6 100%);
+}
+
+/* Improve link contrast in footer */
+.page-footer .dark-grey, .page-footer a.grey-text{
+    color: #263238;
+}
+
+/* Donation button styling */
+.btn-donation{
+    display: inline-block;
+    background: linear-gradient(90deg,#ffb74d 0%, #ff8a65 100%);
+    color:#1b1b1b;
+    padding: 14px 22px;
+    font-size: 1.15rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(255,138,101,0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.btn-donation:hover, .btn-donation:focus{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(255,138,101,0.28);
+}
+
+/* Card subtle lift */
+.card{
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(33,33,33,0.12);
+}
+
+/* Improve contrast for card titles */
+.card .card-title{
+    color: rgba(15,23,42,0.92);
+    font-weight: 700;
+}
