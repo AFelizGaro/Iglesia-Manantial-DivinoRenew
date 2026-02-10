@@ -1,691 +1,502 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="light" lang="es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Iglesia De Dios Manantial Divino en Santo Domingo. Comunidad cristiana dedicada a la proclamación del evangelio, discipulado, ministerios, cultos y oración.">
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Iglesia De Dios Manantial Divino en Santo Domingo. Comunidad cristiana dedicada a la proclamación del evangelio, discipulado, ministerios, cultos y oración.">
 
-        <meta property="og:title" content="Iglesia De Dios Manantial Divino">
-        <meta property="og:description" content="Comunidad de fe dedicada a la proclamación del evangelio y discipulado.">
-        <meta property="og:image" content="img/LOGO-SOLOGris.png">
-        <meta property="og:type" content="website">
-        <title>Iglesia De Dios Manantial Divino | Iglesia Cristiana en Santo Domingo</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-            />
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"
-            media="screen,projection" />
-        <link type="text/css" rel="stylesheet" href="css/EDPU.css"
-            media="screen,projection" />
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta property="og:title" content="Iglesia De Dios Manantial Divino">
+    <meta property="og:description" content="Comunidad de fe dedicada a la proclamación del evangelio y discipulado.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E03V3W4C15"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta property="og:image" content="img/LOGO-SOLOGris.png">
+    <meta property="og:type" content="website">
+    <title>Iglesia De Dios Manantial Divino | Iglesia Cristiana en Santo Domingo</title>
 
-  gtag('config', 'G-E03V3W4C15');
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Church",
-  "name": "Iglesia De Dios Manantial Divino",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Santo Domingo",
-    "addressCountry": "DO"
-  },
-  "url": "https://iglesiamanantialdivino.org",
-  "sameAs": [
-    "https://www.facebook.com/iglesiadediosmanantialdivino",
-    "https://www.instagram.com/manantialdivinord",
-    "https://www.youtube.com/@iglesiadediosmanantialdivino"
-  ]
-}
-</script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-dark": "#0e47b8",
+                        "accent": "#d32f2f", // Institutional Red
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "beige-light": "#fdfbf7",
+                        "beige-dark": "#1a1614",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+</head>
 
-    <body>
-        <div class="navbar-fixed">
-            <nav class=" nav-extended degradadoAzulBlancoAmarillo">
-                <div class="nav-wrapper">
-                        <a href="#!" class="left brand-logo"> <img
-                            class="responsive-img hide-on-med-and-down"
-                            src="img/LOGO-SOLOGris.png"
-                            style="width: 300px;" alt="Logotipo Iglesia Manantial Divino" loading="lazy"> </a>
-                        <a href="#!" class="left brand-logo"> <img
-                            class="responsive-img hide-on-med-and-up"
-                            src="img/LOGO-SOLOGris.png"
-                            style="width: 180px;" alt="Logotipo Iglesia Manantial Divino" loading="lazy"> </a>
-                            <a href="#" data-target="slide-out" class="sidenav-trigger right grey-text"><i class="material-icons ">menu</i></a>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-sans overflow-x-hidden">
+    <header
+        class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-100 dark:border-gray-800"
+        x-data="{ open: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="flex-shrink-0 text-primary">
+                        <span class="flex shrink-0 items-center"><img src="img/logo-oficial.png" alt=""
+                                class="h-10 w-auto"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1
+                            class="font-display font-bold text-lg sm:text-xl leading-none tracking-tight text-slate-900 dark:text-white">
+                            Iglesia de Dios</h1>
+                        <span
+                            class="text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase">Manantial
+                            Divino</span>
+                    </div>
                 </div>
-                <div class="nav-content right ">
-                    <ul class="centered Bold hide-on-med-and-down">
-                        <li><a class="dark-grey" href="index.html">INICIO</a></li>
-                        <li><a class="dark-grey" href="Nosotros.html">NOSOTROS</a></li>
-                        <li><a class="dark-grey modal-trigger"
-                                href="#IDModalMinisterios">MINISTERIOS</a></li>
-                        <li><a class="dark-grey" href="collapsible.html">PUBLICACIONES</a></li>
-                        <li><a class="dark-grey" href="collapsible.html">TRANSMISIONES</a></li>
-                        <li><a class="dark-grey" href="Calendario.html">CALENDARIOS</a></li>
-                        <li><a class="dark-grey" href="collapsible.html">CONTACTOS</a></li>
-                    </ul>
-                    
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+                    <a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Inicio</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Nosotros</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Ministerios</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Eventos</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Sermones</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-3">
+                    <button
+                        class="px-5 py-2.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-900 dark:text-white text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        Visítanos
+                    </button>
+                    <button
+                        class="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all transform hover:-translate-y-0.5">
+                        Donar
+                    </button>
                 </div>
-            </nav>
-        </div>
-        <!-- Menu para celulares  -->
-        <ul id="slide-out" class="sidenav">
-                <li><div class="user-view">
-                    <div class="background degradadoAmarilloAzul">
-                       <!--  <img src="img/goldenlogo.png"> -->
-                    </div>
-                    <a href="#user"><img class="circle" src="img/logo de la iglesia.jpg" alt="Logotipo Iglesia" loading="lazy"></a>
-                    <a href="#"><span class="dark-grey Bold">Iglesia De Dios Manantial Divino</span></a>
-                </div></li>
-            <li><a class="dark-grey waves-effect" href="#!">Publicaciones
-                   </a></li>
-            <li><a class="dark-grey waves-effect" href="#!">Transmisiones</a></li>
-            <li><a class="dark-grey waves-effect">Calendarios</a></li>
-            <li><a class="dark-grey waves-effect" href="#!">Contactos</a></li>
-        </ul>
-
-
-
-        <div class="carousel carousel-slider center" id="IDCaruselPrincipal" data-aos="fade-up">
-
-                <a class="carousel-item" href="#one!"><img
-                    src="img/carrusel/Portada.jpeg" alt="Portada - Jesucristo, el modelo a seguir" loading="lazy"></a>
-            <h3 class="TextoSobreImagen TransparentBackGround" ><strong>RESPONDIENDO AL LLAMADO</strong></h3>
-            <!--  <a class="carousel-item" href="#one!"><img
-                    src="img/carrusel/img2.jpg"></a>
-            <a class="carousel-item" href="#one!"><img
-                    src="img/carrusel/img3.jpg"></a>
-
-            <div class="carousel-item grey white-text" href="#one!">
-                <h2>First Panel</h2>
-                <p class="white-text">This is your first panel</p>
-            </div>
-            <a class="carousel-item" href="#one!"><img
-                    src="img/carrusel/img1.jpg"></a>
-            <div class="carousel-item blue-grey white-text" href="#two!">
-                <h2>Second Panel</h2>
-                <p class="white-text">This is your second panel</p>
-            </div>
-        -->
-        </div>
-        <!--  <div class="parallax-container">
-            <div class="parallax"><img src="img/jovenes.png"></div>
-        </div>
--->
-        <div class="row degradadoAzulAmarillo">
-            <div class="col s12 m6">
-                <p class="TituloSeccion hide-on-med-and-down" data-aos="fade-right">MINIS</p>
-                <p class="TituloSeccion Boldx2 white-text hide-on-med-and-down" data-aos="fade-right" data-aos-delay="150">TERIOS</p>
-            </div>
-            <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeAyuda.jpg" alt="Ministerio de Caballeros" loading="lazy">
-                        <span class="card-title TransparentBackGround ">MINISTERIO
-                            DE CABALLEROS</span>
-                    </div>
-                    <div class="card-content">
-                        <p> Brindamos oportunidades para el servicio comunitario y el liderazgo, 
-                            alentando a los hombres a ser modelos de integridad y fe en sus 
-                            roles como esposos, padres y miembros activos de la comunidad. 
-                            Con enfoque en la mentoría y el desarrollo personal, 
-                            el Ministerio de Caballeros busca equipar a los hombres para enfrentar los desafíos contemporáneos 
-                            desde una perspectiva cristiana sólida.</p>
-                    </div>
+                <div class="md:hidden flex items-center">
+                    <button aria-label="Menu"
+                        class="text-slate-700 dark:text-white hover:text-primary focus:outline-none"
+                        id="mobile-menu-btn">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
                 </div>
             </div>
         </div>
-
-        
-        <div class="row">
-            <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeDamas.jpg" alt="Ministerio de Damas" loading="lazy">
-                        <span class="card-title TransparentBackGround">MINISTERIO
-                            DE DAMAS</span>
-                    </div>
-                    <div class="card-content">
-                        <p>El Ministerio de Damas en una iglesia evangélica 
-                            fortalece espiritualmente y apoya a las mujeres a
-                             través de estudios bíblicos, momentos de oración y 
-                             eventos de compañerismo. También promueve el crecimiento 
-                             en roles como esposas, madres y líderes comunitarias, 
-
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeJovenes.jpg" alt="Ministerio de Jóvenes" loading="lazy">
-                        <span class="card-title TransparentBackGround">MINISTERIO
-                            DE JOVENES</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            El Ministerio de Jóvenes  inspira
-                             y une a jóvenes mediante estudios bíblicos, 
-                             eventos y camaradería. Fomenta el liderazgo 
-                             y el compromiso, guiándolos en su crecimiento 
-                             espiritual y servicio comunitario, preparándolos 
-                             para desafíos y roles futuros.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col s12 m6" data-aos="fade-right"> 
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioNNA.png" alt="Ministerio de Niños y Adolescentes" loading="lazy">
-                        <span class="card-title TransparentBackGround">MINISTERIO
-                            DE NIÑOS Y ADOLECENTES</span>
-                    </div>
-                    <div class="card-content">
-                        <p>El Ministerio de Niños y Adolescentes 
-                            brinda enseñanza bíblica y actividades divertidas. 
-                            Fomenta valores, crecimiento espiritual y amistades. 
-                            Prepara a los jóvenes para una vida con propósito 
-                            y valores cristianos sólidos, mientras disfrutan 
-                            de un entorno seguro y enriquecedor.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeEducacionBiblica.png" alt="Escuela Bíblica y Educación" loading="lazy">
-                        <span class="card-title TransparentBackGround">ESCUELA
-                            BÍBLICA Y EDUCACIÓN</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            El Ministerio de Escuela Bíblica  
-                            ofrece educación espiritual a través de clases
-                            y estudios. Equipa a personas de todas las edades 
-                            con conocimiento bíblico, promoviendo un entendimiento
-                            más profundo de la fe y su aplicación práctica en la vida diaria.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeJovenes.jpg" alt="Ministerio de Adoración" loading="lazy">
-                        <span class="card-title TransparentBackGround">MINISTERIO
-                            DE ADORACION</span>
-                    </div>
-                    <div class="card-content">
-                        <p>El Ministerio de Adoración 
-                             lidera la música y la 
-                            adoración en servicios. Mediante cantos, 
-                            instrumentos y expresiones creativas, 
-                            busca llevar a la congregación a una conexión 
-                            espiritual con Dios, inspirando reverencia y 
-                            devoción en la comunidad de fe.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col s12 m6" data-aos="fade-left">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeEvangelismoYMisiones.png" alt="Ministerio de Evangelismo y Misiones" loading="lazy">
-                        <span class="card-title TransparentBackGround">MINISTERIO
-                            DE EVANGELISMO Y MISIONES</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            El Ministerio de Evangelismo y Misiones
-                             se dedica a difundir el mensaje cristiano 
-                             y participar en actividades misioneras 
-                             locales e internacionales. Comparte el 
-                             amor de Cristo a través de evangelismo, 
-                             proyectos de servicio y alcance comunitario, 
-                             con el objetivo de transformar vidas y expandir el Reino de Dios.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col s12 m6" data-aos="fade-right">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/MinisterioDeJovenes.jpg" alt="Ministerio de Familia" loading="lazy">
-                        <span class="card-title TransparentBackGround">MINISTERIO
-                            DE FAMILIA</span>
-                    </div>
-                    <div class="card-content">
-                        <p>El Ministerio de Familia 
-                            fortalece relaciones familiares 
-                            a través de enseñanza, apoyo y eventos.
-                             Ofrece recursos para matrimonios, crianza 
-                             y relaciones intergeneracionales. 
-                             Busca edificar familias sólidas basadas
-                             en principios bíblicos, promoviendo 
-                             la unidad y el crecimiento espiritual en el hogar.</p>
-                    </div>
-
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-white dark:bg-background-dark border-b border-gray-100 dark:border-gray-800 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto"
+            id="mobile-menu">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-base font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                    href="#">Inicio</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Nosotros</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Ministerios</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Eventos</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Sermones</a>
+                <hr class="border-gray-100 dark:border-gray-800 my-4" />
+                <div class="flex flex-col gap-3">
+                    <button
+                        class="w-full px-5 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-900 dark:text-white text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        Visítanos
+                    </button>
+                    <button
+                        class="w-full px-5 py-3 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all">
+                        Donar
+                    </button>
                 </div>
             </div>
         </div>
-
-        <div class="center azul">
-            <h4 data-aos="fade-up"><a href="#IDModalMinisterios" class="dark-grey modal-trigger">CLIC PARA <span class="Bold">VER MÁS</span> MINISTERIOS</a></h4>
+    </header>
+    <section
+        class="relative w-full min-h-[500px] h-[600px] lg:h-[700px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30 z-10"></div>
+            <img alt="Worship service with raised hands in spiritual atmosphere" class="w-full h-full object-cover"
+                data-alt="People raising hands in worship service with warm lighting" src="img/img-0.jpg" />
+        </div>
+        <div  class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center gap-6 md:gap-8">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/10 mb-2">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                <span class="text-xs font-semibold text-white tracking-wide uppercase">En vivo este domingo</span>
             </div>
-
-            <div class="parallax-container">
-                <div class="parallax"><img src="img/goldenlogo.png" alt="Golden logo" loading="lazy"></div>
-            </div>
-
-
-        <div class="row">
-    <div class="col s12 center" data-aos="fade-up">
-        <h3 class="grey-text Bold">nosotros</h3>
-    </div>
-</div>
-
-<div class="container">
-
-    <!-- VALORES -->
-    <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div>
-            <h4 class="grey-text">
-                <i class="material-icons">
-                    <span class="material-symbols-outlined">join_inner</span>
-                </i>
-                Valores
-            </h4>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="200">
-            <h6 class="grey-text">
-                Amor a Dios y al prójimo <span class="blue-text">*</span>
-                Obediencia a lo establecido por Dios <span class="blue-text">*</span>
-                Santidad práctica en todo lo que hacemos <span class="blue-text">*</span>
-                Humildad en el servicio <span class="blue-text">*</span>
-                Unidad en el pueblo <span class="blue-text">*</span>
-                Trabajo en equipo <span class="blue-text">*</span>
-                Integridad total
-            </h6>
-        </div>
-    </div>
-
-    <!-- MISIÓN -->
-    <div class="row" data-aos="fade-up" data-aos-delay="300">
-        <div>
-            <h4 class="grey-text">
-                <i class="material-icons">
-                    <span class="material-symbols-outlined">frame_inspect</span>
-                </i>
-                Misión
-            </h4>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="400">
-            <h6 class="grey-text">
-                Somos una comunidad de fé, creyentes en el Señor Jesucristo
-                y en el poder del Espíritu Santo, para la proclamación del
-                evangelio y discipulado a hombres y mujeres, con la esperanza
-                de ver un verdadero cambio de vida conforme al diseño de Dios.
-            </h6>
-        </div>
-    </div>
-
-    <!-- VISIÓN -->
-    <div class="row" data-aos="fade-up" data-aos-delay="500">
-        <div>
-            <h4 class="grey-text">
-                <i class="material-icons">
-                    <span class="material-symbols-outlined">visibility</span>
-                </i>
-                Visión
-            </h4>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="600">
-            <h6 class="grey-text">
-                Ver hombres y mujeres cambiados por el poder del evangelio,
-                disfrutando una vida plena y de santidad a través de Cristo,
-                dando por gracia lo que por gracia han recibido.
-            </h6>
-        </div>
-    </div>
-
-</div>
-
-            <br>
-<div class="container center">
-
-    <h4 class="grey-text" data-aos="fade-up">
-        pastores
-    </h4>
-
-    <div class="row">
-
-        <!-- Pastor principal -->
-        <div class="col m6" data-aos="flip-left" data-aos-delay="150">
-            <div class="row">
-                <div class="col m12">
-                    <div class="circle-picture">
-                        <img src="img/Pastor.jpg" 
-                             alt="Pastores Mariano Sanchez y Hilda Acevedo" 
-                             loading="lazy">
-                        <h5 class="grey-text Bold">
-                            Mariano Sanchez e<br>
-                            Hilda I. Acevedo De Sanchez
-                        </h5>
-                        <h6 class="grey-text Bold">(pastor)</h6>
-                    </div>
-                </div>
+            <h1 data-aos="zoom-in" 
+                class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-white tracking-tight drop-shadow-sm">
+                Somos una iglesia <br /><span class="text-blue-300">de familia</span>
+            </h1>
+            <p data-aos="fade-up" class="text-base sm:text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed px-4">
+                Bienvenidos a casa. Somos una iglesia para toda la familia, donde crecemos juntos en fe, amor y unidad,
+                construyendo vidas transformadas en Cristo.
+            <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center px-4 sm:px-0">
+                <button
+                    class="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-bold text-lg hover:bg-primary-dark transition-all shadow-lg shadow-blue-600/40 w-full sm:w-auto group">
+                    <span class="material-symbols-outlined group-hover:animate-pulse">live_tv</span>
+                    Ver transmisiones
+                </button>
+                <button
+                    class="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-lg hover:bg-white hover:text-slate-900 transition-all w-full sm:w-auto">
+                    <span class="material-symbols-outlined">mail</span>
+                    Contáctanos
+                </button>
             </div>
         </div>
-
-        <!-- Pastor asistente -->
-        <div class="col m6" data-aos="flip-right" data-aos-delay="300">
-            <div class="row">
-                <div class="col m12">
-                    <div class="circle-picture">
-                        <img src="img/PastorAsistente.jpg" 
-                             alt="Pastores Luis Alfredo Mendez y Adela Rodriguez" 
-                             loading="lazy">
-                        <h5 class="grey-text Bold">
-                            Luis Alfredo Mendez y<br>
-                            Adela Rodriguez De Mendez
-                        </h5>
-                        <h6 class="grey-text Bold">(pastor asistente)</h6>
+    </section>
+    <section class="py-16 md:py-20 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+                <div class="flex flex-col gap-6 order-1">
+                    <div class="inline-block">
+                        <h2
+                            class="font-display font-bold text-3xl md:text-4xl text-slate-900 dark:text-white mb-2 leading-tight">
+                            Bienvenidos a Iglesia de Dios Manantial Divino</h2>
+                        <div class="h-1.5 w-24 bg-accent rounded-full"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-            <div class="center amarillo">
-                <h4><a href="Nosotros.html" class="dark-grey">CLIC PARA <span class="Bold">SABER MÁS</span> SOBRE NOSOTROS</a></h4>
-                    </div>
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="container ">
-                    <div class="center">
-                        <h3 class="grey-text Bold">Quieres contactarnos</h3>
-                    </div>
-
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col m6">
-                                    <i class="material-icons prefix"><span
-                                            class="material-symbols-outlined">badge</span></i>
-                                    <input id="txtNombre" type="text"
-                                        class="validate" required>
-                                    <label for="txtNombre">Nombre<span
-                                            class="red-text">*</span></label>
-                                </div>
-                                <div class="input-field col m6">
-                                    <i class="material-icons prefix"><span
-                                            class="material-symbols-outlined">location_on</span></i>
-                                    <input value="República Dominicana/Santo Domingo" 
-                                    id="txtDireccion" type="text"
-                                        class="validate">
-                                    <label for="txtDireccion">Cual es tu
-                                        direccion?</label>
-                                </div>
-
-                                <div class="input-field col m6">
-                                    <i class="material-icons prefix"> <span
-                                            class="material-symbols-outlined">phone_iphone</span></i>
-                                    <input id="txtCelular" type="tel"
-                                        class="validate" required>
-                                    <label for="txtCelular">WhatsApp o
-                                        celular
-                                        <span class="red-text">*</span></label>
-                                </div>
-                                <div class="input-field col m6">
-                                    <i class="material-icons prefix"><span
-                                            class="material-symbols-outlined">mail</span></i>
-                                    <input id="txtCorreo" type="email"
-                                        class="validate">
-                                    <label for="txtCorreo">Correo electronico</label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <textarea id="txtpeticion"
-                                        class="materialize-textarea"></textarea>
-                                    <label for="txtpeticion">Describenos tu
-                                        peticion</label>
-                                </div>
+                    <p class="text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Somos una familia de fe apasionada por Jesús y comprometida con nuestra comunidad. Creemos en el
+                        poder transformador del amor de Dios y te invitamos a ser parte de nuestra familia.
+                    </p>
+                    <p class="text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed hidden sm:block">
+                        Aquí encontrarás un lugar para pertenecer, crecer y servir. No importa cuál sea tu historia, hay
+                        un lugar para ti en nuestra mesa.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
+                        <div class="flex gap-4 items-start sm:items-center">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-2xl">diversity_3</span>
                             </div>
-                            <button class="btn waves-effect waves-light
-                                right
-                                azul" type="submit" name="action">Enviar
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </form>
-                    </div>
-
-
-                </div>
-                <div class="row">
-                    <div class="col s12 center">
-                        <h3 class="grey-text Bold">Donde estamos</h3>
-                    </div>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6332.765060168114!2d-69.9234725305842!3d18.49935854453342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6b985ed6a23bb1!2sIglesia%20de%20Dios%20Manantial%20Divino!5e0!3m2!1ses!2sdo!4v1675053932628!5m2!1ses!2sdo"
-                    width="100%" height="450" style="border:0;"
-                    allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <footer class="page-footer degradadoAmarilloAzul">
-                    <div class="container">
-                        <!-- <div class="col m12 center">
-                    <img class="center responsive-img" src="img/LOGO-SOLO.png"
-                        style="width: 50px;">
-                </div>-->
-                        <div class="row">
-                            <div class="col l6 m12">
-                                <br>
-                                <br>
-                                <br>
-                                <a href="#IDModalDonaciones" class="modal-trigger btn-donation Bold">DONACIONES</a>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white">Comunidad</h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Crece junto a otros</p>
                             </div>
-
-
-                            <div class="col l4 offset-l2 m12">
-                                <h5 class="black-text">Redes sociales</h5>
-                                <ul>
-                                    <div class="row">
-                                        <div class="col m3">
-                                            <div class="row">
-                                                <div class="col m12">
-                                                    <a href="https://www.youtube.com/@iglesiadediosmanantialdivino" target="_blank" class="center brand-logo"> 
-                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAatJREFUaEPtWIFxAiEQPCtJ0ompRFOJSSVqJWolSSdJdoZz+H9g4BcERphxfN//4/Z27zjYSOdj07n/MgDUZnAwMBggIzAkRAaQfv0pGHgVkZ0JFa7x0eG7DkX2x/Gn3tPvm3kGv68hYyEG4Nzx38CW5pkzcBKRLxFxAfeuxHD+m5s369tw/t0FwsfApYHIzyMAJj7mN10AIBkAaHGAhUlOuADsjfZbBPBp8uHumwsAEhcgWhzdA4B8IKMgA6g+dn1PZQKJdiBt+OZ8CADIUhc/UJ5zoJy+lWbAzqvcQKIA/JIhcxWGnKv6xL5rshIANCaobmx+VAUAIKysqgMACLCwNsGrAkCbgoWSKdNVAHSbxKze5wUxqoyyK7FSzOjcV8mjALB7AfQqrM6pVoIFQK6DwdcXm5re2ukoACW0m4sVdLoAEWynW95SohOdnE70tKlf7AVAgw9Aa8cq8HUR/RCAHE1XLt0j8tB+0sGWPTnYQF68WD2M9jJrjhbV9twh+3hRr88+x9XIUxzu5pJCETuDgSJhTTA6GEgIVpFHBwNFwppgdDCQEKwij/4B2glJMd3pZmwAAAAASUVORK5CYII="/>
-                                                    </a>
-                                                </div>
-                                                <div class="col m12
-                                                    black-text">
-                                                    youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col m3">
-                                            <div class="row center">
-                                                <div class="col m12">
-                                                    <a href="https://www.instagram.com/manantialdivinord/?igsh=dWFtN24waWxwbHU1" target="_blank" class="center
-                                                        brand-logo"> 
-                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAvdJREFUaEPtmc+rjkEUxz+XslGWSimklKxkpQgbsmJled37H9yFLKSwsJLyH2BrZcFS2FlZSTZyZSkrZcvz1YzGeGfmzPPO8zzeeqZu96135sz5nh/fc+a8a6z4Wltx/ZkBTO3B2QOr6IGDwFnggPuvz33XNuD/XrvPr2qE1YSQFL/aCb9dc0GPvZJ/x3rOCkBWfmkV2mCfvPLIAsQCYGzlQ/znujDNhpQFwKfOGgqfKZY8cSh3cQmAwmaZJG0BWqG0mRJUAvCzhQYFGUpaMdCZDEHIC/LGPysHYKOjyocDA4iteysBIpkLOQApYTWYPMcrhxblUUyZKaMlqTUHQNaXwJrl6U8hEbOHryOS6cHESZrKOcmSF6pCqJZ9kpdEt8YFUSB0VmSRYrskG+U8UANgkYt3uHZD+kuBmBBqQrQXACsDxZY/7ELvCnDEWf8D8MRVVxnGrxoQC42d84AVQEhxl4BrwKlE4gjsfeCZ+14ho7i3FMpBAKjAiAq1BOQxcLqQ9VJYTeEXt89K14MACK2vPFBIWNZN4G7ghTCsUucHARAKfQccs2gPvAVOBHsthNEcQMgM+x3T7DQC+AHsDvZaeq7BAXwEdhkBfAf2TO0B3R9aRWFx3AjgDXDyfwAQNlk3gsQs4bjehdC9YJOFspuHkO4Pu8l9rnu9UND+uevvv7p91mI2CAAlsrzge/XzwBZwMQFCBexBVyteVFo/Dtc/x1tU4rhP2QusA5eBo64Heg88dYXuWyX7+O2DeMALrxqFuEO17Xo1AEtxCSMlDqdUKqjvkfI1b+1e3ailuMRK+t5ePVHqQdNnMJZ82I/xpBRIS7eZI69eT8opB1oxmLDr/eu7nAdkNUuXWCpaLb7vNVbRxdYi00LJlIylBls1L6YhQCw9WpRSU+ZCk+GuZxHr27WFJ2R5JW7xx47SbDRUZqwfOLIxH1unBoA/68eEHlBqbGjxhB89ytKfgwGB5ezvPX0AmIWPsXEGMIaVc3fMHpg9sKQFfgG59pwxasWzjwAAAABJRU5ErkJggg=="/>
-                                                    </a>
-                                                </div>
-                                                <div class="col m12
-                                                    black-text">
-                                                    instagram
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col m3">
-                                            <div class="row center">
-                                                <div class="col m12">
-                                                    <a href="https://www.facebook.com/iglesiadediosmanantialdivino?mibextid=ZbWKwL" target="_blank" class="center
-                                                        brand-logo"> 
-                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAltJREFUaEPtmYtNxDAMhn2TAJvAJMAkwCTAJMAksAncj5pTmziOX+2p0kWqTjo1iT+/aicH2vk47Fx+ugCc24KZFrgmonsiwu/8+Zkg8VueLyL6zICPAhShHyahLTIB5o2I3icwy9zTuxGAp+Mqz65dl5MKyItnLQ/ALRF9eDYbzHGBWAGytC6xwKpqa1gAoHVof4uB2HjUbKQF2FL4IrcKQgOQ6TYlpRYhkcVC7jQCyAhYCA2fhkbrUQC+BQq4Ejf3f8oIAAuPtBTS4LS+BAAF3PQ2kQCirqPNJlCQBADZu/EgAfxqskDnHVFr1RwNANa7477YPYDX48soD7xD9FsHAKawFu0BRH0fPltnnCI3FFOKPvynjTHWqj2AiPtAqB4AhId1vQNutKhiOYDoJlJ2i1q2cSMOIOr/UgBHAaB9WOE0OIBo2XB2gKiW1gRo1uYsEA3gXQE0PulIL9aksVA6ZwGLC2UAWJKGyoUsQbw1QHoWygCwWLwp6qIfsgwAS9JoaiwOQFMdllgFANeA9w6t6p4ae1lKi6ZE6dVCljioE8+aabSRtwdgTW1ziLUATOW0xY22sgCrbKkjs+TntS3gailhBcSCtuEoENku5G7qIZDnWCUboGliRuV07dPW04lMgOHJxuhcqPSs6GG1R+lZAKqPpAbACpEBoBJe6l25qrjcxowsEQUYuo01BmoYBDZSbC87eQEwD7WO6e5M60I1hGQND4BJ61ELzOdzl3xaANeVUq1JrwV6MQL3uhKuiJCSMUI3k5kWcLTAuVMyLZArmXK1C4BSUau99gfkx5kx8BZA2wAAAABJRU5ErkJggg=="/>
-                                                    </a>
-                                                </div>
-                                                <div class="col m12
-                                                    black-text">
-                                                    facebook
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col m3">
-                                            <div class="row center">
-                                                <div class="col m12">
-                                                    <a href="" class="center
-                                                        brand-logo"> 
-                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAmNJREFUaEPtmYtNhEAURWcrUStRK1ErUStRK1ErUStRT8JNriPMRx7sbmQSgwGGued9h2WXjnzsjlx/2gD27cHNA4fsgYuU0m1KieM+x0tK6f5bB8dfoxRCbyml030qt7URf9kL8Hkg4iVj1NglD2wAwR7ciwfeDWJuPq0CQLI9DRXDxYtjTmVbFGCq1GH1KJDFAO6GOo2VEXw19A7vH0AA+Zp5hz5z3ViuFwFw8Qh5aEhcYB4NGgieUxvhAIi4GVZFOAA9w+e3QIQCYMWzQW3L4lNgDlHr/KEACh3i/NnUcZ4493M1r7BFID/yZ+XzwgDc+ghVshJOWJTRE1L+vJIXwgBk/TxpCSmVTKoRYlqH4EvhGAagxXIr5wv07KWmQtINEAagmPXwYSGd5//8Ws0Tvl2eAg8DUKjk8eoienIAOM+D1QDGrKxQIAeA6Hmbk4UXB1CojFkZS5IjeAMIbRWwsjZ62mp4WMkDpeQPC6FaxXAIRFKtEM08Vam8gqmhlXpBGIAWK1kr3++MJbHnkLy6ShlFjBK5lqy5NwTiHmipQMwL8wAP82RtaVjaTnPEc77xa7H+YgCtW+ipPiDxLZ071AOlSlRrWrre2/jCAPLNF4JIbHah50N4lSCIea9IrV07DEBJN/W+y3nKITAM3Qc4L/y+4etpdmEA/hqJQMQi8sTeeWthVKteY/PDACihsrDE+4J4iL+PzNrcM9aFa7C6HgbQumD0fRtAtEV7n/f/PFD7maPXgnPu997z4zml7wNUGMrd3F+V5whn7p8/Mc1deJX522fWVcxcWGTzwOaBmRb4AgAitTE6n2jFAAAAAElFTkSuQmCC"/> 
-                                                    </a>
-                                                </div>
-                                                <div class="col m12
-                                                    black-text">
-                                                    WhatsApp
-                                                </div>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </ul>
+                        </div>
+                        <div class="flex gap-4 items-start sm:items-center">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white">Servicio</h3>
+                                <p class="text-sm text-slate-500 dark:text-slate-400">Amor en acción</p>
                             </div>
                         </div>
                     </div>
-                    <span>
-                    </span>
-                    <div class="footer-copyright">
-                        <div class="container">
-                            <span class="dark-grey"> © 2014 Copyright
-                                Iglesia De
-                                Dios
-                                Manantial Divino</span>
-                            <a class="grey-text text-lighten-4 right" href="#!">Desarrollado
-                                por Ing. A. Feliz</a>
+                    <button
+                        class="mt-4 px-6 py-3 rounded-lg border-2 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-semibold hover:border-primary hover:text-primary transition-colors w-full sm:w-fit text-center">
+                        Conoce más sobre nosotros
+                    </button>
+                </div>
+                <div class="relative order-2 mt-8 lg:mt-0">
+                    <div
+                        class="absolute -inset-2 sm:-inset-4 bg-beige-light dark:bg-gray-800 rounded-2xl transform rotate-2">
+                    </div>
+                    <img alt="Diverse group of people smiling and talking in a church lobby"
+                        class="relative rounded-xl shadow-2xl w-full object-cover aspect-[4/3]"
+                        data-alt="Group of smiling people gathered in community" src="img/img-4.jpg" />
+                    <div
+                        class="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-white dark:bg-gray-800 p-3 sm:p-4 rounded-lg shadow-xl flex items-center gap-3 sm:gap-4 max-w-[90%] sm:max-w-xs border border-gray-100 dark:border-gray-700">
+                        <div class="bg-accent/10 p-2 sm:p-3 rounded-full text-accent">
+                            <span class="material-symbols-outlined text-xl sm:text-2xl">favorite</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-900 dark:text-white">Un lugar para todos</p>
+                            <p class="text-xs text-slate-500">Ven tal como eres</p>
                         </div>
                     </div>
-                </footer>
-
-
-
-
-                <!-- Modal donaciones -->
-                <div id="IDModalDonaciones" class="modal
-                    degradadoAzulAmarillo">
-                    <div class="modal-content">
-                        <h4>Donaciones</h4>
-                        <p>
-                            <h5>Entidad bancaria:Banco Popular Dominicano</br>
-                            Tipo de cuenta:Corriente</br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 md:py-20 bg-beige-light dark:bg-[#151b26]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-10 gap-4">
+                <div>
+                    <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-2">Próximo Evento</h2>
+                    <p class="text-slate-600 dark:text-slate-400">No te pierdas lo que Dios está haciendo.</p>
+                </div>
+                <a class="text-primary font-semibold hover:text-primary-dark flex items-center gap-1 group" href="#">
+                    Ver calendario completo <span
+                        class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+            </div>
+            <div
+                class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row mb-16 group">
+                <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10"></div>
+                    <img alt="Concert stage with lights and music equipment"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        data-alt="Worship band playing on stage with lights" src="img/img-2.jpg">
+                    <div
+                        class="absolute top-4 left-4 z-20 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 text-center shadow-lg">
+                        <span class="block text-xs font-bold text-slate-500 uppercase tracking-wider">OCT</span>
+                        <span class="block text-2xl font-black text-slate-900 dark:text-white font-display">24</span>
+                    </div>
+                </div>
+                <div class="w-full lg:w-2/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span
+                            class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-200 text-xs font-bold rounded-full uppercase tracking-wide">Dominical</span>
+                        <span class="text-sm text-slate-500 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span> 10:00 AM
+                        </span>
+                    </div>
+                    <h3
+                        class="font-display font-bold text-2xl lg:text-3xl text-slate-900 dark:text-white mb-4 leading-tight">
+                        Culto de Adoración y Palabra</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed text-sm sm:text-base">
+                        Únete a nosotros para un tiempo especial de alabanza, adoración y una palabra poderosa que
+                        renovará tu espíritu. Clases para niños disponibles.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <button
+                            class="flex-1 px-5 py-3 rounded-lg bg-primary text-white font-bold text-sm shadow-md hover:bg-primary-dark transition-colors text-center w-full">
+                            Planificar mi visita
+                        </button>
+                        <button
+                            class="flex-1 px-5 py-3 rounded-lg border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-bold text-sm hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2 w-full">
+                            <span class="material-symbols-outlined text-lg">location_on</span>
+                            Ver mapa
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 md:mb-8 gap-4">
+                <div>
+                    <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-1">Últimos Mensajes
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Escucha las enseñanzas recientes.</p>
+                </div>
+                <a class="text-slate-500 hover:text-primary dark:text-slate-400 font-medium text-sm flex items-center gap-1 group"
+                    href="#">
+                    Ver biblioteca <span
+                        class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+            </div>
+            <div
+                class="flex overflow-x-auto pb-6 -mx-4 px-4 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 snap-x snap-mandatory md:snap-none no-scrollbar">
+                <article
+                    class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
+                    <div class="relative aspect-video">
+                        <img alt="Open bible on a wooden table with soft light" class="w-full h-full object-cover"
+                            data-alt="Open Bible study setting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQO3T-9Vn_Jdm44uhH8qNgM2PSerEnFjv_-h40laN-0sOu_hqwBgf3pwU4H1dpQiqgJ9NqmVxSnQji66iq9KSTbCOk17vPC-yjPTicn2lJf1nDmu0A6E9zE_zcUi4vK68Z8C5yDJ7B8h8qiw60jUAm9hMxRGbtiYXfy2vuokNKHsEzyih4wMRrsZhUHNyH0VDhsxO4M2BYtzv1G5SRE9Rn79S7_LVvKjzTPnexiapgR-ctkLgMuNGVXqahK4_tgLsPembDfeD529k" />
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                             <span
-                            class="Bold">Ref.: 815-158-670</span></br>
-                        Titular:Iglesia de Dios Manantial Divino<br></h5>
-                </p>
-            </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green
-                    btn-flat">Salir</a>
-            </div>
-        </div>
-
-        <!-- Modal donaciones -->
-        <div id="IDModalMinisterios" class="modal degradadoAzulAmarillo">
-            <div class="modal-content">
-                <h4>MINISTERIOS y DEPARTAMENTOS</h4>
-                <div class="row">
-                    <!-- Grid of ministry blocks -->
-                    <div class="col s12">
-                        <div class="row">
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <a href="MinisterioCaballeros.html" class="dark-grey"><h5 class="Boldx2">Caballeros</h5></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <h5 class="Boldx2 dark-grey">Damas</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <a href="MinisterioDeJovenes.html" class="dark-grey"><h5 class="Boldx2">Jóvenes</h5></a>
-                                    </div>
-                                </div>
-                            </div>
-                              </div>
-                              <div class="row">
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <a href="MinisterioNNA.html" class="dark-grey"><h5 class="Boldx2">N.N.A.</h5></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <h5 class="Boldx2 dark-grey">Educación Cristiana</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <a href="MinisterioDeAdoracion.html" class="dark-grey"><h5 class="Boldx2">Adoración</h5></a>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <h5 class="Boldx2 dark-grey">Evangelismo</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m6 l4">
-                                <div class="card hoverable degradadoAzulBlancoAmarillo">
-                                    <div class="card-content center">
-                                        <a href="MinisterioFamilia.html" class="dark-grey"><h5 class="Boldx2">Familia</h5></a>
-                                    </div>
-                                </div>
-                            </div>
+                                class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
                         </div>
                     </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">Serie: Fe
+                            Inquebrantable</div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">Caminando sobre
+                            las aguas</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            Descubre cómo mantener tu mirada en Jesús en medio de las tormentas de la vida. Una
+                            enseñanza sobre Mateo 14.
+                        </p>
+                        <div
+                            class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                            <span class="text-xs text-slate-500 font-medium">Pastor Carlos Ruiz</span>
+                            <span class="text-xs text-slate-400">14 Oct, 2023</span>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
+                    <div class="relative aspect-video">
+                        <img alt="Abstract background representing hope and light" class="w-full h-full object-cover"
+                            data-alt="Abstract light background"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQLw2CJ3i-uoRE8cBhRdN1Pdtf4aDKEsiYZb99_FBxgQS7-R-vwzAnauq0N2yWWHXHKceMnuVg0HEzrKCRQghnCjaxJDgqKIwI1AwFPB2L69XCmxSMURkf018UqpFaMixNfMrGniHfINHYT7k4mXj0oJWyspJyRItz80jgr7AV-2uF42NXtQ9jQ_w6h6szta3J041uCNHMhqJ4WE65Dc_RTt3ZOhczU8O9hCzySMy4QtvD-AL9xVSeARYrxIDfXvbRT2JBKMEDikU" />
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <span
+                                class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">Serie: Fe
+                            Inquebrantable</div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">El poder de la
+                            oración</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            La oración no es solo pedir, es conectar el cielo con la tierra. Aprende los principios de
+                            una vida de oración efectiva.
+                        </p>
+                        <div
+                            class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                            <span class="text-xs text-slate-500 font-medium">Pastor Carlos Ruiz</span>
+                            <span class="text-xs text-slate-400">07 Oct, 2023</span>
+                        </div>
+                    </div>
+                </article>
+                <article
+                    class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
+                    <div class="relative aspect-video">
+                        <img alt="Group of people praying together" class="w-full h-full object-cover"
+                            data-alt="Community praying together"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrDonIYgfsq0ksAH-lvtPwZ2tDTwgYwpGigIbb_8lEtO3BxQw_rRqwQ_PcdrWc_fbsFG6YtDFQxgkrWIZIGDkmrSOLMAzw4KAPrkk6SB4YmKDLGxF9kTA4Gip1tMtA8GZz8vk4AkvqZjPvBcJ-pjFvRL6aTFoOHv6wxlszX0OnqtA8OVb02bmmoWfafhpMfS9dP1hD5DBeOIVa2OvOp_5CdnQlhorEujlA9cgF5woPC_-LwlnWpkGRt-g8gMeydAcBNPr1CiNv4-Q" />
+                        <div
+                            class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <span
+                                class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">Estudio Bíblico
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">El Evangelio de
+                            Juan</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            Profundizando en el capítulo 3. ¿Qué significa realmente nacer de nuevo? Un estudio verso a
+                            verso.
+                        </p>
+                        <div
+                            class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                            <span class="text-xs text-slate-500 font-medium">Hna. Maria Lopez</span>
+                            <span class="text-xs text-slate-400">01 Oct, 2023</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-12">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined text-3xl"><img src="img/logo-oficial.png" alt=""
+                                class="h-10 w-auto"></span>
+                        <span class="font-display font-bold text-lg text-slate-900 dark:text-white">Iglesia de Dios
+                            Manantial Divino</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Llevando el mensaje de esperanza y amor a nuestra comunidad. Un lugar donde todos son
+                        bienvenidos.
+                    </p>
+                    <div class="flex gap-4 mt-2">
+                        <a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path clip-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.409-.06 3.809-.06h.63zm1.673 5.378-1.244-.001c-4.71 0-5.116.035-5.367.16-.62.308-1.01.8-1.176 1.474-.132.535-.147 1.229-.147 6.275v.237c0 4.316.046 5.152.193 5.674.31.986.993 1.625 2.016 1.884.512.128 1.487.164 5.753.164h.209c3.961 0 5.11-.027 5.617-.168 1.04-.287 1.708-.946 1.996-1.977.127-.456.162-1.282.162-4.99v-.519c0-4.048-.035-5.143-.162-5.597-.285-1.012-.958-1.68-1.956-1.984-.522-.159-1.367-.184-5.908-.184zm-3.045 4.375 4.385 2.502-4.385 2.42V11.753z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-colors"
+                            href="#">
+                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4">Explora</h3>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Quiénes Somos</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Nuestros Pastores</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Ministerios</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Peticiones de Oración</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4">Horarios</h3>
+                    <ul class="space-y-3">
+                        <li class="flex flex-col">
+                            <span class="text-sm font-bold text-slate-800 dark:text-slate-200">Domingo</span>
+                            <span class="text-sm text-slate-600 dark:text-slate-400">10:00 AM - Culto General</span>
+                            <span class="text-sm text-slate-600 dark:text-slate-400">06:00 PM - Culto Jovenes</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-sm font-bold text-slate-800 dark:text-slate-200">Miércoles</span>
+                            <span class="text-sm text-slate-600 dark:text-slate-400">07:30 PM - Estudio Bíblico</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4">Ubicación</h3>
+                    <div class="rounded-lg overflow-hidden h-32 w-full bg-gray-200 relative group cursor-pointer">
+                        <img alt="Map showing location"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                            data-alt="Map location of the church" data-location="Church Location"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuATrvkbljqvG_P4x3h1yuBMLU8FKjID7BgCn5UyWGvgYYdWrOz0ApaZOB1AmMDPT5eetpR7QfQK9eM9mfQqL3dFL-yYndyzL_X3yGTCIZrURY6MatXSNLZ2EAoCxr5Lv3V8oNB3USo7Tn3JaAoILsUl-yQL4zOkVEY494L6uB0kng5QabnGYA1A1-T9UGDlE_rvU0DJg1eJD9qTxryoXccF547Z9EyI_CkrSlwhiKLkauB3t824c-6_AYgvd5GUsR6bgRFfFRblQq8" />
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <span
+                                class="material-symbols-outlined text-primary text-3xl drop-shadow-md">location_on</span>
+                        </div>
+                    </div>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                        Av. Principal 123, Ciudad<br />
+                        Tel: (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-100 dark:border-gray-800 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-slate-500 dark:text-slate-500 text-center md:text-left">
+                    © 2023 Iglesia Manantial Divino. Todos los derechos reservados.
+                </p>
+                <div class="flex gap-6">
+                    <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
+                        href="#">Privacidad</a>
+                    <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
+                        href="#">Términos</a>
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
         AOS.init({
             duration: 900,
             easing: 'ease-out-cubic',
@@ -693,15 +504,18 @@
             offset: 120
         });
         </script>
+    <script>
+        // Simple toggle script for mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
 
-        <script type="text/javascript" src="js/jquery-3.6.2.js"></script>
-        <script type="text/javascript" src="js/materialize.js"></script>
-        <script type="text/javascript" src="js/FDPU.js"></script>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    </body>
-
-
-
-
+</body>
 
 </html>
