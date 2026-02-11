@@ -1,331 +1,393 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="es">
+
 
 <head>
-    <title>Iglesia De Dios Manantial Divino</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/EDPU.css" media="screen,projection" />
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Iglesia De Dios Manantial Divino en Santo Domingo. Comunidad cristiana dedicada a la proclamación del evangelio, discipulado, ministerios, cultos y oración.">
+
+    <meta property="og:title" content="Iglesia De Dios Manantial Divino">
+    <meta property="og:description" content="Comunidad de fe dedicada a la proclamación del evangelio y discipulado.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta property="og:image" content="img/LOGO-SOLOGris.png">
+    <meta property="og:type" content="website">
+    <title>Iglesia De Dios Manantial Divino | Iglesia Cristiana en Santo Domingo</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-dark": "#0e47b8",
+                        "accent": "#d32f2f", // Institutional Red
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "beige-light": "#fdfbf7",
+                        "beige-dark": "#1a1614",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <div class="navbar-fixed">
-        <nav class=" nav-extended degradadoAzulBlancoAmarillo">
-            <div class="nav-wrapper">
-                <a href="#!" class="left brand-logo"> <img class="responsive-img" src="img/LOGO-SOLOGris.png"
-                        style="width: 300px;"> </a>
-            </div>
-            <div class="nav-content right ">
-                <ul class="centered Bold">
-                    <li><a class="dark-grey" href="index.html">INICIO</a></li>
-                    <li><a class="dark-grey" href="Nosotros.html">NOSOTROS</a></li>
-                    <li><a class="dark-grey modal-trigger" href="#IDModalMinisterios">MINISTERIOS</a></li>
-                    <li><a class="dark-grey" href="collapsible.html">PUBLICACIONES</a></li>
-                    <li><a class="dark-grey" href="collapsible.html">TRANSMISIONES</a></li>
-                    <li><a class="dark-grey" href="Calendario.html">CALENDARIOS</a></li>
-                    <li><a class="dark-grey" href="collapsible.html">CONTACTOS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 antialiased">
 
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/MinisterioDeAyuda.jpg">
+    <!-- Hero Header -->
+    <header class="relative h-64 w-full overflow-hidden shadow-lg">
+        <img data-aos="fade-up" alt="Congregación" class="absolute inset-0 w-full h-full object-cover"
+            data-alt="Congregación de la iglesia adorando en comunidad"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnuNGiyxu6OI9no66U7G-61LPzrYrGsBYG_CcQZqBKdwsfi5kC9eRD7M03Ut5CRnGvBQcWr9i_SmkzxSVnT9811Ej2yxM4InqAbjFz-tS00jnJj7amEEyFjOlbBL7WuUQGq3HlGLJuuvOrgTA4FXjNs2SkOSKZW8Ci55aeVjW3MAGvSR9mneAx3ljaAAG_ujb_o4vkByyyOTpYNewZN81hUDUroP6jL7BfuJ_wSXzaZV5RHCNKBiq7aZfUrugpJ0X35hqVVRLePHY" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        <div class="absolute bottom-6 left-6 right-6">
+            <h1 data-alt="zoom-in" class="text-3xl font-bold text-white tracking-tight">Nuestra Historia y Visión</h1>
+            <p class="text-white/80 text-sm mt-1">Iglesia de Dios Manantial Divino</p>
         </div>
+    </header>
+    <main class="max-w-md mx-auto px-5 pb-20">
+<!-- History Timeline -->
+<section class="mt-14">
+    <div class="flex items-center gap-2 mb-8">
+        <span class="p-2 bg-primary/10 rounded-lg">
+            <i class="material-icons text-primary">history</i>
+        </span>
+        <h2 class="text-2xl font-bold">Nuestra Historia</h2>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="row">
-                <div class="col s12 center">
-                    <h3 class="white-text degradadoAmarilloAzul Bold">Cuerpo Pastoral</h3>
+    <div  class="relative border-l-2 border-primary/20 ml-3 space-y-12 py-2">
+
+        <!-- Inicios -->
+        <div class="relative pl-8">
+            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">Década del 70</span>
+            <h3 class="text-lg font-semibold mt-1">Los Inicios</h3>
+            <p  class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                La Iglesia de Dios fue la primera iglesia del Concilio Iglesia de Dios en este sector.
+                Inició como un campo blanco con aproximadamente 10 miembros bajo el liderazgo del
+                pastor <strong>Federico Mojica</strong>.
+            </p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                Posteriormente pastorearon: Pedro Plata, Andrés King, Andrés E. Rincón,
+                Moisés Fernández, Luis Corniel, Esteban Mercedes y Santo Feliciano Soto.
+                En sus primeros años la iglesia funcionó en una casa alquilada en la
+                avenida Ortega y Gasset, siendo trasladada a distintos lugares del sector.
+            </p>
+        </div>
+
+        <!-- 1987-1991 -->
+        <div class="relative pl-8">
+            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">1987 – 1991</span>
+            <h3 class="text-lg font-semibold mt-1">Adquisición y Construcción del Templo</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                En 1987 llegó el pastor <strong>Enrique Cueva</strong>, quien junto a los líderes
+                gestionó la adquisición de un local propio.
+            </p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                En 1989 se adquirió un solar y se construyó el templo,
+                el cual fue inaugurado en 1991 en la
+                <strong>Calle San Juan de la Maguana #212</strong>.
+            </p>
+        </div>
+
+        <!-- 1994-2008 -->
+        <div class="relative pl-8">
+            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">1994 – 2008</span>
+            <h3 class="text-lg font-semibold mt-1">Consolidación y Expansión Social</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                Desde 1994 hasta 2005 la iglesia fue pastoreada por el
+                <strong>Rvdo. Máximo Montaño</strong>.
+                Luego, entre 2005 y 2008, estuvo bajo el liderazgo del
+                <strong>Rvdo. Daniel Oscar</strong>.
+            </p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                Durante este período se creó el <strong>Ministerio del Agua</strong>,
+                destinado a beneficiar a la comunidad con agua purificada a bajo costo,
+                marcando un fuerte compromiso social.
+            </p>
+        </div>
+
+        <!-- 2008 - Actualidad -->
+        <div class="relative pl-8">
+            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
+            <span class="text-xs font-bold text-accent uppercase tracking-widest">2008 – Actualidad</span>
+            <h3 class="text-lg font-semibold mt-1">Manantial Divino</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                En 2008 asumió el pastorado el <strong>Rvdo. Mariano Sánchez</strong>,
+                actual pastor de la iglesia. Bajo su liderazgo se han realizado cambios
+                significativos que han impulsado un crecimiento numérico y una mayor
+                proyección hacia la comunidad.
+            </p>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                El sistema de agua evolucionó hasta convertirse en el
+                <strong>Centro Comunitario Manantial</strong> en 2013.
+                Debido al crecimiento de la congregación, la iglesia fue trasladada
+                a un local más amplio en la <strong>Calle Rafael J. Castillo,
+                Plaza Anduriña</strong>, adoptando oficialmente el nombre
+                <strong>Iglesia de Dios Manantial Divino</strong>.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Pastoral Leadership -->
+        <section class="mt-12">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="p-2 bg-primary/10 rounded-lg">
+                    <i class="material-icons text-primary">groups</i>
+                </span>
+                <h2 class="text-xl font-bold">Cuerpo Pastoral</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Pastor 1 -->
+                <div
+                    class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <img alt="Mariano Sánchez"
+                        class="w-50 h-50 mx-auto rounded-full object-cover border-2 border-primary/20 p-1 mb-3"
+                        data-alt="Retrato de un hombre maduro sonriente, Pastor Mariano Sánchez" src="img/Pastor.jpg" />
+                    <h4 class="font-bold text-sm">Mariano Sánchez</h4>
+                    <span class="text-xs text-primary font-medium">Pastor Titular</span>
                 </div>
-                <div class="row">
-                    <div class="col m12">
-                        <div class="row">
-                            <div class="col m6 center">
-                                <div class="row">
-                                    <div class="col m12">
-                                        <img class="center z-depth-3 img-radius" width="250" src="img/DirectivaExample.jpg">
-                                    </div>
-                                    <div class="col m12">
-                                        <h5 class="Bold">Mariano Sánchez e Hilda Acevedo de Sánchez</h5>
-                                        <h5>Pastores</h5>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col m6 center">
-                                <div class="row">
-                                    <div class="col m12">
-                                        <img class="center z-depth-3 img-radius" width="250" src="img/DirectivaExample.jpg">
-                                    </div>
-                                    <div class="col m12">
-                                        <h5 class="Bold">Alfredo Méndez y Adela Rodríguez</h5>
-                                        <h5>Pastores asistentes</h5>
-                                    </div>
-                                </div>
-                            </div>                      
-                        </div>
+                <!-- Pastor 2 -->
+                <div
+                    class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <img alt="Hilda Acevedo"
+                        class="w-50 h-50 mx-auto rounded-full object-cover border-2 border-primary/20 p-1 mb-3"
+                        data-alt="Retrato de una mujer profesional sonriente, Pastora Hilda Acevedo"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkQJSz-tM-r2AxN_d2qULaVCV753MtlR9ZIocv1xRJMmXHomMkcbPvTQmDnv3fGi12AZazhnbNZ-qeI7fHh2wcwY-ro_MPOf5OrhYODlmfSmkFtRhOiSrqmyNNdxcwYL4FoonXEFM5-SBIWK_XZfi8ce3AYCYNYLEeUaFeqBshsBETfl_qZJIf4cS5Ktltpohrs2xnNxhiRcL7MlpXbK6zuAHc7DOAyE87YLVS4IiE4k4Eec_Yf5KdxnroW5KmavnX7_cRsf4CmEk" />
+                    <h4 class="font-bold text-sm">Hilda Acevedo</h4>
+                    <span class="text-xs text-primary font-medium">Pastora Titular</span>
+                </div>
+                <!-- Assistant 1 -->
+                <div
+                    class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <img alt="Alfredo Méndez"
+                        class="w-35 h-35 mx-auto rounded-full object-cover border-2 border-slate-100 dark:border-slate-700 p-1 mb-2 opacity-90"
+                        data-alt="Retrato de hombre joven amable, Pastor Asistente Alfredo Méndez"
+                        src="img/PastorAsistente.jpg" />
+                    <h4 class="font-bold text-xs">Alfredo Méndez</h4>
+                    <span class="text-[10px] text-slate-500 uppercase tracking-tight">Pastor Asistente</span>
+                </div>
+                <!-- Assistant 2 -->
+                <div
+                    class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
+                    <img alt="Adela Rodríguez"
+                        class="w-35 h-35 mx-auto rounded-full object-cover border-2 border-slate-100 dark:border-slate-700 p-1 mb-2 opacity-90"
+                        data-alt="Retrato de mujer joven amable, Pastora Asistente Adela Rodríguez"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbFdOwPXiBd0F-64ypWIP29eJzUt1NK4Crf0z_fe8P7O24XpnekwR_UaljdMralwgAwu3UMKYlZg74ywFvlRS8G8pL7hu2duJLb590l-Slvd_ebX4EoFh9yYjSzSMY6D5J36ACeytiF5m4FhpInt6ZVPB4HVUy3zPapjbPe8XKLB28khcRB3S_EnFs07NrTm-sTFU4bdJpLIRy5M2saYQIvRbXU3g5kwlYQSSRJfiRF2nm0-YLYRIkSUXUsHWlgfUs5T76gfbw7FY" />
+                    <h4 class="font-bold text-xs">Adela Rodríguez</h4>
+                    <span class="text-[10px] text-slate-500 uppercase tracking-tight">Pastora Asistente</span>
+                </div>
+            </div>
+        </section>
+        <!-- Organigrama -->
+        <section class="mt-12">
+            <div class="flex items-center gap-2 mb-6">
+                <span class="p-2 bg-primary/10 rounded-lg">
+                    <i class="material-icons text-primary">account_tree</i>
+                </span>
+                <h2 class="text-xl font-bold">Organigrama</h2>
+            </div>
+            <div class="space-y-3">
+                <!-- Structure Level 1 -->
+                <div class="bg-primary text-white p-3 rounded-lg text-center font-bold text-sm shadow-md">
+                    Consejo Directivo General
+                </div>
+                <!-- Connection Line -->
+                <div class="flex justify-center">
+                    <div class="w-0.5 h-4 bg-primary/30"></div>
+                </div>
+                <!-- Structure Level 2 -->
+                <div
+                    class="bg-primary/20 border border-primary/30 text-primary p-3 rounded-lg text-center font-bold text-sm">
+                    Cuerpo Pastoral
+                </div>
+                <!-- Connection Line -->
+                <div class="flex justify-center">
+                    <div class="w-0.5 h-4 bg-primary/30"></div>
+                </div>
+                <!-- Structure Level 3 -->
+                <div class="grid grid-cols-2 gap-3">
+                    <div
+                        class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-3 rounded-lg text-center text-xs font-semibold">
+                        Ministerios de Enseñanza
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-3 rounded-lg text-center text-xs font-semibold">
+                        Ministerio de Alabanza
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-3 rounded-lg text-center text-xs font-semibold">
+                        Obras Sociales
+                    </div>
+                    <div
+                        class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 p-3 rounded-lg text-center text-xs font-semibold">
+                        Administración
                     </div>
                 </div>
-                
             </div>
-            <div class="row">
-                <div class="col s12 center">
-                    <h3 class="grey-text Bold">Organigrama</h3>
+        </section>
+        <!-- FAQs & Normas -->
+        <section class="mt-12 space-y-4">
+            <!-- Normas Generales -->
+            <div
+                class="group border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-background-dark/50 overflow-hidden">
+                <div class="flex items-center justify-between p-4 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <i class="material-icons text-accent-red">gavel</i>
+                        <h3 class="font-bold text-sm">Normas Generales</h3>
+                    </div>
+                    <i class="material-icons text-slate-400 group-hover:rotate-180 transition-transform">expand_more</i>
                 </div>
-                <div class="col m12 center">
-                    <img width="800 px" src="img/Organigrama.jpeg">
-                </div>
-            </div>
-            <div class="col s12 center">
-                <h3 class="grey-text Bold">Historia de la Iglesia</h3>
-            </div>
-            <div class="m12">
-                <p class="Thin">
-                    La Iglesia de Dios, Fue la primera iglesia del concilio iglesia de Dios en este sector, 
-                    tuvo sus inicios a mediado de la década del 70, inicia como un campo blanco con  alrededor 
-                    de 10  miembros  su primer pastor fue  Federico Mojica luego estuvieron los  pastores Pedro 
-                    Plata, Andrés King, Andrés E. Rincón Moisés Fernández,  Luis Corniel , Esteban Mercedes, 
-                    Santo Feliciano Soto la iglesia   comenzó  en una casa alquilada en la avenida Ortega Gasset 
-                    y fue trasladada a  diferentes lugares en el sector. En sus primeros años. En el año 1987 
-                    llego a esta iglesia el pastor Enrique Cueva quien junto a los líderes comenzó a gestionar 
-                    para que la iglesia  tuviera un local propio. En el año 1989  adquirieron  un solar  y construyó 
-                    un templo que fue inaugurado en el año 1991.  En la calle San Juan de La Maguana #212   
-                </p>
-                <p>
-                    Del año1994 hasta el año 2005 esta iglesia fue pastoreada  por   el  Rvdo.   
-                    Máximo Montaño del 2005-2008 estuvo pastoreada por  El Rvdo. Daniel Oscar. 
-                    unos de sus aportes a la iglesia fue la creación del ministerio del agua para 
-                    beneficiar a la comunidad con agua purificada a bajo costo. En el  año 2008 el Rvdo. 
-                </p>
-                <p>
-                    Mariano Sánchez quien es el  pastor actual  comenzó a pastorear y durante este tiempo 
-                    continuo realizando cambios importantes a través de los cuales la iglesia ha experimentado 
-                    un mayor crecimiento numérico  una mayor proyección hacia la comunidad convirtiendo lo que 
-                    hasta entonces era el sistema de agua que en sus inicios fue dirigido por el ministerio agua 
-                    de unidad en un ministerio de la iglesia  constituyéndolo como el   Centro comunitario  Manantial  
-                    en el año 2013 debido al crecimiento en el  número de miembros para mantener el funcionamiento del 
-                    ministerio comunitario social,  la iglesia fue trasladada a un local más amplio en la calle Rafael J. Castillo 
-                    en La plaza Anduriña a partir de esta mudanza se le da el nuevo  nombre de    iglesia de Dios Manantial Divino . 
-                </p>
-            </div>
-           
-        </div>
-     
-     
-   
-        <div class="row">
-            <div class="col s12 center">
-                <h3 class="grey-text Bold">Normas generales</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 center">
-                <h3 class="grey-text Bold">Preguntas frecuentes</h3>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="page-footer degradadoAmarilloAzul">
-        <div class="container">
-            <!-- <div class="col m12 center">
-                    <img class="center responsive-img" src="img/LOGO-SOLO.png"
-                        style="width: 50px;">
-                </div>-->
-            <div class="row">
-                <div class="col l6 m12">
-                    <br>
-                    <br>
-                    <br>
-                    <a href="#IDModalDonaciones" style="font-size:
-                                    200%;" class=" modal-trigger waves-effect
-                                    waves-light btn light-blue darken-4 pulse
-                                    white-text Bold">DONACIONES</a>
-                </div>
-
-
-                <div class="col l4 offset-l2 m12">
-                    <h5 class="black-text">Redes sociales</h5>
-                    <ul>
-                        <div class="row">
-                            <div class="col m3">
-                                <div class="row">
-                                    <div class="col m12">
-                                        <a href="#!" class="center
-                                            brand-logo"> <box-icon
-                                                type='logo'
-                                                name='youtube'
-                                                size="lg"
-                                                border="circle"
-                                                color=""></box-icon>
-                                        </a>
-                                    </div>
-                                    <div class="col m12
-                                        black-text">
-                                        youtube
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col m3">
-                                <div class="row center">
-                                    <div class="col m12">
-                                        <a href="#!" class="center
-                                            brand-logo"> <box-icon
-                                                type='logo'
-                                                name='instagram'
-                                                size="lg"
-                                                border="circle"
-                                                color=""></box-icon>
-                                        </a>
-                                    </div>
-                                    <div class="col m12
-                                        black-text">
-                                        instagram
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col m3">
-                                <div class="row center">
-                                    <div class="col m12">
-                                        <a href="#!" class="center
-                                            brand-logo"> <box-icon
-                                                type='logo'
-                                                name='facebook'
-                                                size="lg"
-                                                border="circle"
-                                                color=""></box-icon>
-                                        </a>
-                                    </div>
-                                    <div class="col m12
-                                        black-text">
-                                        facebook
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col m3">
-                                <div class="row center">
-                                    <div class="col m12">
-                                        <a href="#!" class="center
-                                            brand-logo"> <box-icon
-                                                type='logo'
-                                                name='whatsapp'
-                                                size="lg"
-                                                border="circle"></box-icon>
-                                        </a>
-                                    </div>
-                                    <div class="col m12
-                                        black-text">
-                                        WhatsApp
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div
+                    class="px-4 pb-4 text-xs text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-50 dark:border-slate-800 pt-3">
+                    <ul class="list-disc pl-4 space-y-2">
+                        <li>Mantener un ambiente de reverencia y respeto mutuo.</li>
+                        <li>Fomentar la puntualidad en todos nuestros servicios y reuniones.</li>
+                        <li>Participar activamente en el servicio comunitario y la vida de iglesia.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <span>
-        </span>
-        <div class="footer-copyright">
-            <div class="container">
-                <span class="dark-grey"> © 2014 Copyright
-                    Iglesia De
-                    Dios
-                    Manantial Divino</span>
-                <a class="grey-text text-lighten-4 right" href="#!">Desarrollado
-                    por Ing. Alber Feliz Garo / Jeremy</a>
+            <!-- FAQ -->
+            <div
+                class="group border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-background-dark/50 overflow-hidden">
+                <div class="flex items-center justify-between p-4 cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <i class="material-icons text-primary">help_outline</i>
+                        <h3 class="font-bold text-sm">Preguntas Frecuentes</h3>
+                    </div>
+                    <i class="material-icons text-slate-400 group-hover:rotate-180 transition-transform">expand_more</i>
+                </div>
+                <div class="px-4 pb-4 text-xs space-y-4 border-t border-slate-50 dark:border-slate-800 pt-3">
+                    <div>
+                        <h5 class="font-bold text-slate-800 dark:text-slate-100">¿Cómo puedo integrarme a un ministerio?
+                        </h5>
+                        <p class="mt-1 text-slate-600 dark:text-slate-400">Puedes acercarte a cualquier pastor asistente
+                            después del servicio dominical para recibir orientación.</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-slate-800 dark:text-slate-100">¿Cuáles son los horarios de servicio?
+                        </h5>
+                        <p class="mt-1 text-slate-600 dark:text-slate-400">Domingos 10:00 AM y Miércoles 7:30 PM en
+                            Plaza Anduriña.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-12">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined text-3xl"><img src="img/logo-oficial.png" alt=""
+                                class="h-10 w-auto"></span>
+                        <span class="font-display font-bold text-lg text-slate-900 dark:text-white">Iglesia de Dios
+                            Manantial Divino</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Llevando el mensaje de esperanza y amor a nuestra comunidad. Un lugar donde todos son
+                        bienvenidos.
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">facebook</i>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">camera_alt</i>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">email</i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4">Explora</h3>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Quiénes Somos</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Nuestros Pastores</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="Ministerios.html">Ministerios</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Peticiones de Oración</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div
+                class="border-t border-gray-100 dark:border-gray-800 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-slate-500 dark:text-slate-500 text-center md:text-left">
+                    © 2023 Iglesia Manantial Divino. Todos los derechos reservados.
+                </p>
+                <div class="flex gap-6">
+                    <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
+                        href="#">Privacidad</a>
+                    <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
+                        href="#">Términos</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Structure -->
-    <div id="IDModalDonaciones" class="modal degradadoAzulAmarillo
-                    ">
-        <div class="modal-content container">
-            <h4>Donaciones</h4>
-            <h5 class="center Bold">Cuentas de banco</h5>
-            <div class="row">
-                <!-- <div class="col m12">
-                    <img class="responsive-img" width="120px" src="img/Cuentas/Popular.png"></img>
-                </div>-->
-                <div class="col m10">
-                    <div class="row">
-                        <div class="col m12">
-                            <h5>Banco:Popular</br>
-                                Tipo:Corriente</br>
-                                Titular:Iglesia de Dios Manantial Divino<br><span class="Bold">815-158-670</span></h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col m12 center">
-                            <img src="img/Cuentas/Paypal.png" width="250px" />
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="right">
-                <a href="#!" class="modal-close waves-effect waves-green btn
-                        azul dark-grey">Salir</a>
-
-            </div>
-            <br>
-        </div>
-        <script type="text/javascript" src="js/materialize.js"></script>
-        <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="js/FDPU.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 120
+        });
+    </script>
+    <script>
+        // Simple toggle script for mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
-
-    <!-- Modal donaciones -->
-    <div id="IDModalMinisterios" class="modal degradadoAzulAmarillo">
-        <div class="modal-content">
-            <h4>Ministerios</h4>
-            <div class="row">
-                <div class="col s12">
-                    <div class="row">
-                        <div class="azul-over col m12 left degradadoAzulBlancoAmarillo ">
-                            <h4 class="Boldx2 dark-grey " style="margin-bottom: 0px; margin-top:
-                                        20px;">Nombre Ministerio</h4>
-                        </div>
-                        <div class="col m12 left degradadoAzulBlancoAmarillo">
-                            <h4 class="Boldx2 dark-grey " style="margin-bottom: 0px; margin-top:
-                                        20px;">Nombre Ministerio</h4>
-                        </div>
-
-                        <div class="col m12 left degradadoAzulBlancoAmarillo">
-                            <h4 class="Boldx2 dark-grey " style="margin-bottom: 0px; margin-top:
-                                        20px;">Nombre Ministerio</h4>
-                        </div>
-
-                        <div class="col m12 left degradadoAzulBlancoAmarillo">
-                            <h4 class="Boldx2 dark-grey" style="margin-bottom: 0px; margin-top:
-                                        20px;">Nombre Ministerio</h4>
-                        </div>
-
-                        <div class="col m12 left degradadoAzulBlancoAmarillo">
-                            <h4 class="Boldx2 dark-grey" style="margin-bottom: 0px; margin-top:
-                                        20px;">Nombre Ministerio</h4>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green
-                        btn-flat">Agree</a>
-        </div>
-    </div>
-
-
 
 </html>

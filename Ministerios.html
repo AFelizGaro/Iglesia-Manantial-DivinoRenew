@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Iglesia De Dios Manantial Divino en Santo Domingo. Comunidad cristiana dedicada a la proclamación del evangelio, discipulado, ministerios, cultos y oración.">
+
+    <meta property="og:title" content="Iglesia De Dios Manantial Divino">
+    <meta property="og:description" content="Comunidad de fe dedicada a la proclamación del evangelio y discipulado.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <meta property="og:image" content="img/LOGO-SOLOGris.png">
+    <meta property="og:type" content="website">
+    <title>Ministerios | Iglesia De Dios Manantial Divino | Iglesia Cristiana en Santo Domingo</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-dark": "#0e47b8",
+                        "accent": "#d32f2f", // Institutional Red
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "beige-light": "#fdfbf7",
+                        "beige-dark": "#1a1614",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-header { font-family: 'Montserrat', sans-serif; }
+        .ios-status-bar { height: 44px; }
+    </style>
+    <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased">
+ <header
+        class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-100 dark:border-gray-800"
+        x-data="{ open: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="flex-shrink-0 text-primary">
+                        <span class="flex shrink-0 items-center"><img src="img/logo-oficial.png" alt=""
+                                class="h-10 w-auto"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1
+                            class="font-display font-bold text-lg sm:text-xl leading-none tracking-tight text-slate-900 dark:text-white">
+                            Iglesia de Dios</h1>
+                        <span
+                            class="text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase">Manantial
+                            Divino</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+                    <a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Inicio</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="Nosotros.html">Nosotros</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="Ministerios.html">Ministerios</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Eventos</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Sermones</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-3">
+                    <button
+                        class="px-5 py-2.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-900 dark:text-white text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        Visítanos
+                    </button>
+                    <button command="show-modal" commandfor="IDModalDonaciones"
+                        class="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all transform hover:-translate-y-0.5">
+                        Donar
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button aria-label="Menu"
+                        class="text-slate-700 dark:text-white hover:text-primary focus:outline-none"
+                        id="mobile-menu-btn">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-white dark:bg-background-dark border-b border-gray-100 dark:border-gray-800 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto"
+            id="mobile-menu">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-base font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                    href="#">Inicio</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="Nosotros.html">Nosotros</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="Ministerios.html">Ministerios</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Eventos</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Sermones</a>
+                <hr class="border-gray-100 dark:border-gray-800 my-4" />
+                <div class="flex flex-col gap-3">
+                    <button
+                        class="w-full px-5 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-900 dark:text-white text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        Visítanos
+                    </button>
+                    <button command="show-modal" commandfor="IDModalDonaciones"
+                        class="w-full px-5 py-3 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all">
+                        Donar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- Hero Section -->
+        <section class="relative h-64 flex items-end overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+            <img data-aos="fade-up" alt="Faith community gathering" class="absolute inset-0 w-full h-full object-cover"
+                data-alt="Group of people praying together in harmony"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJhW99zWB0pwwo8K5D4shVO_LY4YwaGOFk7owrI3rYJMGnvrXhqplEAErPwm9CmuDT5oILhYehODRjvsOiyhiEEmFHgDoD7LsjR7d36iZTa75hTYWlcRwGcGgY9gVLv2SiD-_3IN8yjzNmfZDMaQCOJj35tJF_DntMCOANkX12cfDVk9E2CjNP1FJXpWSgofWFPF0AD3Xrw1p5TH_vyR_6tYRDWwv02hFucKnmxOMyRDYL5Xt62L0FGlYH97o5vH1SI0fdydTBRrQ" />
+            <div class="relative z-20 px-6 pb-8">
+                <h1 data-aos="zoom-in" class="font-header text-3xl text-white leading-tight">Nuestros<br />Ministerios</h1>
+                <div  class="h-1 w-12 bg-accent-red mt-2 rounded-full"></div>
+            </div>
+        </section>
+        <!-- Introduction -->
+        <section class="px-6 py-8">
+            <div
+                class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                <h2 class="font-header text-lg text-primary mb-3">El Propósito de Servir</h2>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                    Creemos que cada miembro tiene un don especial para bendecir a otros. En Manantial Divino, servimos
+                    con amor y excelencia para impactar nuestra comunidad en Santo Domingo.
+                </p>
+            </div>
+        </section>
+        <!-- Ministry Grid -->
+        <section class="px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Ministry Card 1 -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-40 relative">
+                    <img alt="Youth ministry group" class="w-full h-full object-cover"
+                        data-alt="Group of joyful young people cheering together"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwX0bN5_ic1VjQBH4ooB1jJ2YDcRl3YqQFe_RJqEtYdNhCSXoDGsbTE-YS545JtHGHmDFK700xhW-3ixAyGz9zB0KVgSm9NtdvuHw-LjXSWVqfHV6AO1aSByC_SQkCs_INohCmdi0kAnqxseHuBRHyRLfZt46EW1UKIkAg2XIuWGSEvzVf7eg5Mtcz0j9M1-tvAFcy8N4ry9VruCPeel6opL4SJ6Rl9jteS_xjHRjsU0F0IR7fxCakfVgEK6GadqyTGTMrfoGd-BM" />
+                    <div
+                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                        <span class="material-symbols-outlined text-sm">groups</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-header text-lg mb-2">Jóvenes</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                        Guiando a la nueva generación a encontrar su identidad y propósito en Cristo.
+                    </p>
+                    <button
+                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                        Saber más
+                    </button>
+                </div>
+            </div>
+            <!-- Ministry Card 2 -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-40 relative">
+                    <img alt="Children ministry" class="w-full h-full object-cover"
+                        data-alt="Teacher and kids playing and learning"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLkB_z2gX-NbV9NzUw8ch-4DMPSQmPU7k4v0Fd1ztX0Ok6LfaquLARSfEaxQIkm4N7lzDW5DkwKK5gVZwwUVR0mPTNYtzjwvo0A_kRiKU5lA3bC-hiKSNnJ8V0Q2eNL_912XZK8INyNTDQtRfyS8euGBHZi-sPck4RizkooW0QINY_RRya6ZiwFK8wGbPGLAwSufKQe4LicR11otHmPV_s_N81Xrt8H2lfUtrge6T4I3BuxJXZo0RexAl5w1PU2GgHCz-1WQv8vo" />
+                    <div
+                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                        <span class="material-symbols-outlined text-sm">child_care</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-header text-lg mb-2">Niños</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                        Formando corazones desde la infancia con principios bíblicos y mucha alegría.
+                    </p>
+                    <button
+                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                        Saber más
+                    </button>
+                </div>
+            </div>
+            <!-- Ministry Card 3 -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-40 relative">
+                    <img alt="Worship team" class="w-full h-full object-cover"
+                        data-alt="Musical instruments and stage lighting in church"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dwzlukAXgn8keSR-Iy3Ly_YeT4VvTP5YW7gKLLyP7Loy-OrllErCVM0__E4VOL-cxMN4d0ZOjQQamqoJZerXNz0kZt0duvUeZppMNcuz5qLltM2mKjymkecscGNayzXhfZJy2esgKz4Qcn-hOzUTzaYkN9LFow_XX24jlv5hh5TZUMCryFOEW05RZFlyTSh3XTGC3-6Ry0-oYRmsRQugJe7LI343E4734fRy6WPdKa2j0OxDj-nxURceaPxFfGp0TIMe6J5ZgY8" />
+                    <div
+                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                        <span class="material-symbols-outlined text-sm">music_note</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-header text-lg mb-2">Alabanza</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                        Exaltando el nombre de Dios a través de la música y la adoración profunda.
+                    </p>
+                    <button
+                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                        Saber más
+                    </button>
+                </div>
+            </div>
+            <!-- Ministry Card 4 -->
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-40 relative">
+                    <img alt="Community service" class="w-full h-full object-cover"
+                        data-alt="People helping others in a community center"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcFlfxf3iAjsjCBeoYG8BIIXbkfCdqBFEjbxDof8IGgy0u_R0AQGvw-XD1yGKhNJi0xrvumxQByqVG447RlBudtIdF3pFCSDEjpDia7ZyTe7aOQbD85o649BY2SEt4_yScPX0Cld3W6CEcti7TYuvLCLXD7FT7-KF9iQtP2UQP2yRi5mAT3O_JYrS_JhvL5uSP7OiESb6YFyK3hT0VT84oXNR75E1DXZBr0xOySLFujDAkCiYXp0HjPP2fspkh4uJmQVqUAbnZEEg" />
+                    <div
+                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                        <span class="material-symbols-outlined text-sm">volunteer_activism</span>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-header text-lg mb-2">Damas &amp; Caballeros</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                        Crecimiento espiritual y apoyo mutuo para adultos en todas sus etapas.
+                    </p>
+                    <button
+                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                        Saber más
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <!-- <section class="mt-12 px-6">
+            <div class="bg-primary/10 dark:bg-primary/20 rounded-xl p-8 text-center relative overflow-hidden">
+              
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full"></div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-accent-red/5 rounded-full"></div>
+                <h2 class="font-header text-2xl mb-4 text-slate-800 dark:text-white leading-tight">¿Sientes el llamado a
+                    servir?</h2>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mb-8 max-w-xs mx-auto">
+                    Hay un lugar para ti en nuestra familia. Únete hoy y comienza a impactar vidas.
+                </p>
+                <button
+                    class="bg-accent-red text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-accent-red/30 active:scale-95 transition-transform">
+                    Quiero Servir
+                </button>
+            </div>
+        </section>
+        -->
+   
+  <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-12">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2 text-primary">
+                        <span class="material-symbols-outlined text-3xl"><img src="img/logo-oficial.png" alt=""
+                                class="h-10 w-auto"></span>
+                        <span class="font-display font-bold text-lg text-slate-900 dark:text-white">Iglesia de Dios
+                            Manantial Divino</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Llevando el mensaje de esperanza y amor a nuestra comunidad. Un lugar donde todos son
+                        bienvenidos.
+                    </p>
+                       <div class="flex justify-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <i class="material-icons text-primary text-xl">facebook</i>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <i class="material-icons text-primary text-xl">camera_alt</i>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <i class="material-icons text-primary text-xl">email</i>
+                </div>
+            </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4">Explora</h3>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Quiénes Somos</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Nuestros Pastores</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="Ministerios.html">Ministerios</a></li>
+                        <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
+                                href="#">Peticiones de Oración</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div
+                class="border-t border-gray-100 dark:border-gray-800 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-slate-500 dark:text-slate-500 text-center md:text-left">
+                    © 2023 Iglesia Manantial Divino. Todos los derechos reservados.
+                </p>
+                <div class="flex gap-6">
+                    <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
+                        href="#">Privacidad</a>
+                    <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
+                        href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 120
+        });
+    </script>
+    <script>
+        // Simple toggle script for mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
