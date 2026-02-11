@@ -65,8 +65,81 @@
 
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-100 antialiased">
 
+    <header
+        class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-100 dark:border-gray-800"
+        x-data="{ open: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+               <a href="index.html"> <div class="flex items-center gap-3">
+                    <div class="flex-shrink-0 text-primary">
+                        <span class="flex shrink-0 items-center"><img src="img/logo-oficial.png" alt=""
+                                class="h-10 w-auto"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1
+                            class="font-display font-bold text-lg sm:text-xl leading-none tracking-tight text-slate-900 dark:text-white">
+                            Iglesia de Dios</h1>
+                        <span
+                            class="text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase">Manantial
+                            Divino</span>
+                    </div>
+                </div>
+                </a>
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+                    <a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Inicio</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="Nosotros.html">Nosotros</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="Ministerios.html">Ministerios</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Eventos</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                        href="#">Sermones</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-3">
+
+                    <button command="show-modal" commandfor="IDModalDonaciones"
+                        class="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all transform hover:-translate-y-0.5">
+                        Donar
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button aria-label="Menu"
+                        class="text-slate-700 dark:text-white hover:text-primary focus:outline-none"
+                        id="mobile-menu-btn">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden absolute top-20 left-0 w-full bg-white dark:bg-background-dark border-b border-gray-100 dark:border-gray-800 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto"
+            id="mobile-menu">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-base font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                    href="#">Inicio</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="Nosotros.html">Nosotros</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="Ministerios.html">Ministerios</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Eventos</a>
+                <a class="block text-base font-medium text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors"
+                    href="#">Sermones</a>
+                <hr class="border-gray-100 dark:border-gray-800 my-4" />
+                <div class="flex flex-col gap-3">
+
+                    <button command="show-modal" commandfor="IDModalDonaciones"
+                        class="w-full px-5 py-3 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all">
+                        Donar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Hero Header -->
-    <header class="relative h-64 w-full overflow-hidden shadow-lg">
+    <header class="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden shadow-lg">
+
         <img data-aos="fade-up" alt="Congregación" class="absolute inset-0 w-full h-full object-cover"
             data-alt="Congregación de la iglesia adorando en comunidad"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnuNGiyxu6OI9no66U7G-61LPzrYrGsBYG_CcQZqBKdwsfi5kC9eRD7M03Ut5CRnGvBQcWr9i_SmkzxSVnT9811Ej2yxM4InqAbjFz-tS00jnJj7amEEyFjOlbBL7WuUQGq3HlGLJuuvOrgTA4FXjNs2SkOSKZW8Ci55aeVjW3MAGvSR9mneAx3ljaAAG_ujb_o4vkByyyOTpYNewZN81hUDUroP6jL7BfuJ_wSXzaZV5RHCNKBiq7aZfUrugpJ0X35hqVVRLePHY" />
@@ -76,93 +149,103 @@
             <p class="text-white/80 text-sm mt-1">Iglesia de Dios Manantial Divino</p>
         </div>
     </header>
-    <main class="max-w-md mx-auto px-5 pb-20">
-<!-- History Timeline -->
-<section class="mt-14">
-    <div class="flex items-center gap-2 mb-8">
-        <span class="p-2 bg-primary/10 rounded-lg">
-            <i class="material-icons text-primary">history</i>
-        </span>
-        <h2 class="text-2xl font-bold">Nuestra Historia</h2>
-    </div>
+    <main class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pb-20">
 
-    <div  class="relative border-l-2 border-primary/20 ml-3 space-y-12 py-2">
+        <!-- History Timeline -->
+        <section class="mt-14">
+            <div class="flex items-center gap-2 mb-8">
+                <span class="p-2 bg-primary/10 rounded-lg">
+                    <i class="material-icons text-primary">history</i>
+                </span>
+                <h2 class="text-2xl font-bold">Nuestra Historia</h2>
+            </div>
 
-        <!-- Inicios -->
-        <div class="relative pl-8">
-            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
-            <span class="text-xs font-bold text-accent uppercase tracking-widest">Década del 70</span>
-            <h3 class="text-lg font-semibold mt-1">Los Inicios</h3>
-            <p  class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                La Iglesia de Dios fue la primera iglesia del Concilio Iglesia de Dios en este sector.
-                Inició como un campo blanco con aproximadamente 10 miembros bajo el liderazgo del
-                pastor <strong>Federico Mojica</strong>.
-            </p>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                Posteriormente pastorearon: Pedro Plata, Andrés King, Andrés E. Rincón,
-                Moisés Fernández, Luis Corniel, Esteban Mercedes y Santo Feliciano Soto.
-                En sus primeros años la iglesia funcionó en una casa alquilada en la
-                avenida Ortega y Gasset, siendo trasladada a distintos lugares del sector.
-            </p>
-        </div>
+            <div class="relative border-l-2 border-primary/20 ml-3 md:ml-6 lg:ml-12 space-y-12 py-2">
 
-        <!-- 1987-1991 -->
-        <div class="relative pl-8">
-            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
-            <span class="text-xs font-bold text-accent uppercase tracking-widest">1987 – 1991</span>
-            <h3 class="text-lg font-semibold mt-1">Adquisición y Construcción del Templo</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                En 1987 llegó el pastor <strong>Enrique Cueva</strong>, quien junto a los líderes
-                gestionó la adquisición de un local propio.
-            </p>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                En 1989 se adquirió un solar y se construyó el templo,
-                el cual fue inaugurado en 1991 en la
-                <strong>Calle San Juan de la Maguana #212</strong>.
-            </p>
-        </div>
 
-        <!-- 1994-2008 -->
-        <div class="relative pl-8">
-            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
-            <span class="text-xs font-bold text-accent uppercase tracking-widest">1994 – 2008</span>
-            <h3 class="text-lg font-semibold mt-1">Consolidación y Expansión Social</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                Desde 1994 hasta 2005 la iglesia fue pastoreada por el
-                <strong>Rvdo. Máximo Montaño</strong>.
-                Luego, entre 2005 y 2008, estuvo bajo el liderazgo del
-                <strong>Rvdo. Daniel Oscar</strong>.
-            </p>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                Durante este período se creó el <strong>Ministerio del Agua</strong>,
-                destinado a beneficiar a la comunidad con agua purificada a bajo costo,
-                marcando un fuerte compromiso social.
-            </p>
-        </div>
+                <!-- Inicios -->
+                <div class="relative pl-8">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark">
+                    </div>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">Década del 70</span>
+                    <h3 class="text-lg font-semibold mt-1">Los Inicios</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        La Iglesia de Dios fue la primera iglesia del Concilio Iglesia de Dios en este sector.
+                        Inició como un campo blanco con aproximadamente 10 miembros bajo el liderazgo del
+                        pastor <strong>Federico Mojica</strong>.
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        Posteriormente pastorearon: Pedro Plata, Andrés King, Andrés E. Rincón,
+                        Moisés Fernández, Luis Corniel, Esteban Mercedes y Santo Feliciano Soto.
+                        En sus primeros años la iglesia funcionó en una casa alquilada en la
+                        avenida Ortega y Gasset, siendo trasladada a distintos lugares del sector.
+                    </p>
+                </div>
 
-        <!-- 2008 - Actualidad -->
-        <div class="relative pl-8">
-            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark"></div>
-            <span class="text-xs font-bold text-accent uppercase tracking-widest">2008 – Actualidad</span>
-            <h3 class="text-lg font-semibold mt-1">Manantial Divino</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                En 2008 asumió el pastorado el <strong>Rvdo. Mariano Sánchez</strong>,
-                actual pastor de la iglesia. Bajo su liderazgo se han realizado cambios
-                significativos que han impulsado un crecimiento numérico y una mayor
-                proyección hacia la comunidad.
-            </p>
-            <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-                El sistema de agua evolucionó hasta convertirse en el
-                <strong>Centro Comunitario Manantial</strong> en 2013.
-                Debido al crecimiento de la congregación, la iglesia fue trasladada
-                a un local más amplio en la <strong>Calle Rafael J. Castillo,
-                Plaza Anduriña</strong>, adoptando oficialmente el nombre
-                <strong>Iglesia de Dios Manantial Divino</strong>.
-            </p>
-        </div>
+                <!-- 1987-1991 -->
+                <div class="relative pl-8">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark">
+                    </div>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">1987 – 1991</span>
+                    <h3 class="text-lg font-semibold mt-1">Adquisición y Construcción del Templo</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        En 1987 llegó el pastor <strong>Enrique Cueva</strong>, quien junto a los líderes
+                        gestionó la adquisición de un local propio.
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        En 1989 se adquirió un solar y se construyó el templo,
+                        el cual fue inaugurado en 1991 en la
+                        <strong>Calle San Juan de la Maguana #212</strong>.
+                    </p>
+                </div>
 
-    </div>
-</section>
+                <!-- 1994-2008 -->
+                <div class="relative pl-8">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark">
+                    </div>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">1994 – 2008</span>
+                    <h3 class="text-lg font-semibold mt-1">Consolidación y Expansión Social</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        Desde 1994 hasta 2005 la iglesia fue pastoreada por el
+                        <strong>Rvdo. Máximo Montaño</strong>.
+                        Luego, entre 2005 y 2008, estuvo bajo el liderazgo del
+                        <strong>Rvdo. Daniel Oscar</strong>.
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        Durante este período se creó el <strong>Ministerio del Agua</strong>,
+                        destinado a beneficiar a la comunidad con agua purificada a bajo costo,
+                        marcando un fuerte compromiso social.
+                    </p>
+                </div>
+
+                <!-- 2008 - Actualidad -->
+                <div class="relative pl-8">
+                    <div
+                        class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-background-dark">
+                    </div>
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest">2008 – Actualidad</span>
+                    <h3 class="text-lg font-semibold mt-1">Manantial Divino</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        En 2008 asumió el pastorado el <strong>Rvdo. Mariano Sánchez</strong>,
+                        actual pastor de la iglesia. Bajo su liderazgo se han realizado cambios
+                        significativos que han impulsado un crecimiento numérico y una mayor
+                        proyección hacia la comunidad.
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+                        El sistema de agua evolucionó hasta convertirse en el
+                        <strong>Centro Comunitario Manantial</strong> en 2013.
+                        Debido al crecimiento de la congregación, la iglesia fue trasladada
+                        a un local más amplio en la <strong>Calle Rafael J. Castillo,
+                            Plaza Anduriña</strong>, adoptando oficialmente el nombre
+                        <strong>Iglesia de Dios Manantial Divino</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </section>
 
         <!-- Pastoral Leadership -->
         <section class="mt-12">
@@ -172,12 +255,13 @@
                 </span>
                 <h2 class="text-xl font-bold">Cuerpo Pastoral</h2>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
                 <!-- Pastor 1 -->
                 <div
                     class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                     <img alt="Mariano Sánchez"
-                        class="w-50 h-50 mx-auto rounded-full object-cover border-2 border-primary/20 p-1 mb-3"
+                        class="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full object-cover border-2 border-primary/20 p-1 mb-3"
                         data-alt="Retrato de un hombre maduro sonriente, Pastor Mariano Sánchez" src="img/Pastor.jpg" />
                     <h4 class="font-bold text-sm">Mariano Sánchez</h4>
                     <span class="text-xs text-primary font-medium">Pastor Titular</span>
@@ -186,7 +270,7 @@
                 <div
                     class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                     <img alt="Hilda Acevedo"
-                        class="w-50 h-50 mx-auto rounded-full object-cover border-2 border-primary/20 p-1 mb-3"
+                        class="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-full object-cover border-2 border-primary/20 p-1 mb-3"
                         data-alt="Retrato de una mujer profesional sonriente, Pastora Hilda Acevedo"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkQJSz-tM-r2AxN_d2qULaVCV753MtlR9ZIocv1xRJMmXHomMkcbPvTQmDnv3fGi12AZazhnbNZ-qeI7fHh2wcwY-ro_MPOf5OrhYODlmfSmkFtRhOiSrqmyNNdxcwYL4FoonXEFM5-SBIWK_XZfi8ce3AYCYNYLEeUaFeqBshsBETfl_qZJIf4cS5Ktltpohrs2xnNxhiRcL7MlpXbK6zuAHc7DOAyE87YLVS4IiE4k4Eec_Yf5KdxnroW5KmavnX7_cRsf4CmEk" />
                     <h4 class="font-bold text-sm">Hilda Acevedo</h4>
@@ -196,7 +280,7 @@
                 <div
                     class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                     <img alt="Alfredo Méndez"
-                        class="w-35 h-35 mx-auto rounded-full object-cover border-2 border-slate-100 dark:border-slate-700 p-1 mb-2 opacity-90"
+                        class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full object-cover border-2 border-slate-100 dark:border-slate-700 p-1 mb-2 opacity-90"
                         data-alt="Retrato de hombre joven amable, Pastor Asistente Alfredo Méndez"
                         src="img/PastorAsistente.jpg" />
                     <h4 class="font-bold text-xs">Alfredo Méndez</h4>
@@ -206,7 +290,7 @@
                 <div
                     class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
                     <img alt="Adela Rodríguez"
-                        class="w-35 h-35 mx-auto rounded-full object-cover border-2 border-slate-100 dark:border-slate-700 p-1 mb-2 opacity-90"
+                        class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full object-cover border-2 border-slate-100 dark:border-slate-700 p-1 mb-2 opacity-90"
                         data-alt="Retrato de mujer joven amable, Pastora Asistente Adela Rodríguez"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbFdOwPXiBd0F-64ypWIP29eJzUt1NK4Crf0z_fe8P7O24XpnekwR_UaljdMralwgAwu3UMKYlZg74ywFvlRS8G8pL7hu2duJLb590l-Slvd_ebX4EoFh9yYjSzSMY6D5J36ACeytiF5m4FhpInt6ZVPB4HVUy3zPapjbPe8XKLB28khcRB3S_EnFs07NrTm-sTFU4bdJpLIRy5M2saYQIvRbXU3g5kwlYQSSRJfiRF2nm0-YLYRIkSUXUsHWlgfUs5T76gfbw7FY" />
                     <h4 class="font-bold text-xs">Adela Rodríguez</h4>

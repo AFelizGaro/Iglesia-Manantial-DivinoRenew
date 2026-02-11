@@ -25,7 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
@@ -97,10 +97,7 @@
                         href="#">Sermones</a>
                 </nav>
                 <div class="hidden md:flex items-center gap-3">
-                    <button
-                        class="px-5 py-2.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-900 dark:text-white text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                        Visítanos
-                    </button>
+                   
                     <button command="show-modal" commandfor="IDModalDonaciones"
                         class="px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all transform hover:-translate-y-0.5">
                         Donar
@@ -130,10 +127,7 @@
                     href="#">Sermones</a>
                 <hr class="border-gray-100 dark:border-gray-800 my-4" />
                 <div class="flex flex-col gap-3">
-                    <button
-                        class="w-full px-5 py-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-900 dark:text-white text-sm font-semibold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                        Visítanos
-                    </button>
+                
                     <button command="show-modal" commandfor="IDModalDonaciones"
                         class="w-full px-5 py-3 rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:bg-primary-dark transition-all">
                         Donar
@@ -217,10 +211,10 @@
                             </div>
                         </div>
                     </div>
-                    <button
+                    <a href="Nosotros.html"
                         class="mt-4 px-6 py-3 rounded-lg border-2 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white font-semibold hover:border-primary hover:text-primary transition-colors w-full sm:w-fit text-center">
                         Conoce más sobre nosotros
-                    </button>
+                    </a>
                 </div>
                 <div class="relative order-2 mt-8 lg:mt-0">
                     <div
@@ -247,7 +241,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-10 gap-4">
                 <div>
-                    <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-2">Próximo Evento</h2>
+                    <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-2">Próximos Evento</h2>
                     <p class="text-slate-600 dark:text-slate-400">No te pierdas lo que Dios está haciendo.</p>
                 </div>
                 <a class="text-primary font-semibold hover:text-primary-dark flex items-center gap-1 group" href="#">
@@ -255,47 +249,119 @@
                         class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
                 </a>
             </div>
-            <div
-                class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row mb-16 group">
-                <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
-                    <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10"></div>
-                    <img alt="Concert stage with lights and music equipment"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                        data-alt="Worship band playing on stage with lights" src="img/img-2.jpg">
-                    <div
-                        class="absolute top-4 left-4 z-20 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 text-center shadow-lg">
-                        <span class="block text-xs font-bold text-slate-500 uppercase tracking-wider">OCT</span>
-                        <span class="block text-2xl font-black text-slate-900 dark:text-white font-display">24</span>
+            <div class="grid gap-12 mb-20">
+
+
+                <!-- Evento 1 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group">
+
+                    <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10">
+                        </div>
+                        <img src="img/img-2.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            alt="Crucero de Familia">
+
+                        <div
+                            class="absolute top-4 left-4 z-20 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 text-center shadow-lg">
+                            <span class="block text-xs font-bold text-slate-500 uppercase">FEB</span>
+                            <span
+                                class="block text-2xl font-black text-slate-900 dark:text-white font-display">15–22</span>
+                        </div>
                     </div>
-                </div>
-                <div class="w-full lg:w-2/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
-                    <div class="flex items-center gap-2 mb-4">
+
+                    <div class="w-full lg:w-2/5 p-8 flex flex-col justify-center">
                         <span
-                            class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-200 text-xs font-bold rounded-full uppercase tracking-wide">Dominical</span>
-                        <span class="text-sm text-slate-500 flex items-center gap-1">
-                            <span class="material-symbols-outlined text-sm">schedule</span> 10:00 AM
+                            class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary text-xs font-bold rounded-full uppercase w-fit mb-4">
+                            Nacional
                         </span>
-                    </div>
-                    <h3
-                        class="font-display font-bold text-2xl lg:text-3xl text-slate-900 dark:text-white mb-4 leading-tight">
-                        Culto de Adoración y Palabra</h3>
-                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed text-sm sm:text-base">
-                        Únete a nosotros para un tiempo especial de alabanza, adoración y una palabra poderosa que
-                        renovará tu espíritu. Clases para niños disponibles.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <button
-                            class="flex-1 px-5 py-3 rounded-lg bg-primary text-white font-bold text-sm shadow-md hover:bg-primary-dark transition-colors text-center w-full">
-                            Planificar mi visita
-                        </button>
-                        <button
-                            class="flex-1 px-5 py-3 rounded-lg border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-bold text-sm hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors flex items-center justify-center gap-2 w-full">
-                            <span class="material-symbols-outlined text-lg">location_on</span>
-                            Ver mapa
-                        </button>
+
+                        <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-4">
+                            Crucero de Familia
+                        </h3>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm">
+                            Evento nacional de confraternidad y crecimiento espiritual para toda la familia.
+                        </p>
                     </div>
                 </div>
+
+                <!-- Evento 2 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group">
+
+                    <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10">
+                        </div>
+                        <img src="img/img-2.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            alt="Campamento de Brigada">
+
+                        <div
+                            class="absolute top-4 left-4 z-20 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 text-center shadow-lg">
+                            <span class="block text-xs font-bold text-slate-500 uppercase">FEB</span>
+                            <span
+                                class="block text-2xl font-black text-slate-900 dark:text-white font-display">27–28</span>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-2/5 p-8 flex flex-col justify-center">
+                        <span
+                            class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-primary text-xs font-bold rounded-full uppercase w-fit mb-4">
+                            Nacional
+                        </span>
+
+                        <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-4">
+                            Campamento de Brigada
+                        </h3>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm">
+                            Encuentro nacional enfocado en formación, liderazgo y servicio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Evento 3 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group">
+
+                    <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10">
+                        </div>
+                        <img src="img/img-2.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            alt="Taller de Oratoria">
+
+                        <div
+                            class="absolute top-4 left-4 z-20 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 text-center shadow-lg">
+                            <span class="block text-xs font-bold text-slate-500 uppercase">MAR</span>
+                            <span class="block text-2xl font-black text-slate-900 dark:text-white font-display">5</span>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-2/5 p-8 flex flex-col justify-center">
+                        <span
+                            class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 text-xs font-bold rounded-full uppercase w-fit mb-4">
+                            Local
+                        </span>
+
+                        <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2">
+                            Taller de Oratoria
+                        </h3>
+
+                        <p class="text-sm text-slate-500 mb-2">
+                            Iglesia Local · Educación Cristiana
+                        </p>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm">
+                            Formación práctica para desarrollar habilidades de comunicación y liderazgo.
+                        </p>
+                    </div>
+                </div>
+
             </div>
+
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 md:mb-8 gap-4">
                 <div>
                     <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-1">Últimos Mensajes
@@ -313,111 +379,169 @@
                 class="flex overflow-x-auto pb-6 -mx-4 px-4 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 snap-x snap-mandatory md:snap-none no-scrollbar">
                 <article
                     class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
-                    <div class="relative aspect-video">
-                        <img alt="Open bible on a wooden table with soft light" class="w-full h-full object-cover"
-                            data-alt="Open Bible study setting"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQO3T-9Vn_Jdm44uhH8qNgM2PSerEnFjv_-h40laN-0sOu_hqwBgf3pwU4H1dpQiqgJ9NqmVxSnQji66iq9KSTbCOk17vPC-yjPTicn2lJf1nDmu0A6E9zE_zcUi4vK68Z8C5yDJ7B8h8qiw60jUAm9hMxRGbtiYXfy2vuokNKHsEzyih4wMRrsZhUHNyH0VDhsxO4M2BYtzv1G5SRE9Rn79S7_LVvKjzTPnexiapgR-ctkLgMuNGVXqahK4_tgLsPembDfeD529k" />
-                        <div
-                            class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                            <span
-                                class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
-                        </div>
-                    </div>
+
+                    <!-- Video -->
+                   <div class="relative aspect-video bg-black rounded-lg overflow-hidden group cursor-pointer"
+     onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/W9_GBEf2YDo?autoplay=1\' class=\'w-full h-full\' allowfullscreen></iframe>'">
+
+    <img src="https://img.youtube.com/vi/W9_GBEf2YDo/hqdefault.jpg"
+         class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+
+    <div class="absolute inset-0 flex items-center justify-center">
+        <span class="material-symbols-outlined text-white text-6xl">
+            play_circle
+        </span>
+    </div>
+
+</div>
+
+                    <!-- Contenido -->
                     <div class="p-5 flex flex-col flex-1">
-                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">Serie: Fe
-                            Inquebrantable</div>
-                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">Caminando sobre
-                            las aguas</h3>
+                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">
+                            Serie: Fe Inquebrantable
+                        </div>
+
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">
+                            Caminando sobre las aguas
+                        </h3>
+
                         <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
-                            Descubre cómo mantener tu mirada en Jesús en medio de las tormentas de la vida. Una
-                            enseñanza sobre Mateo 14.
+                            Descubre cómo mantener tu mirada en Jesús en medio de las tormentas de la vida.
+                            Una enseñanza sobre Mateo 14.
                         </p>
+
                         <div
                             class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
-                            <span class="text-xs text-slate-500 font-medium">Pastor Carlos Ruiz</span>
-                            <span class="text-xs text-slate-400">14 Oct, 2023</span>
+                            <span class="text-xs text-slate-500 font-medium">
+                                Pastor Carlos Ruiz
+                            </span>
+                            <span class="text-xs text-slate-400">
+                                14 Oct, 2023
+                            </span>
                         </div>
                     </div>
+
+                </article>
+
+                <article
+                    class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
+
+                    <!-- Video -->
+<div class="relative aspect-video bg-black rounded-lg overflow-hidden group cursor-pointer"
+     onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/W9_GBEf2YDo?autoplay=1\' class=\'w-full h-full\' allowfullscreen></iframe>'">
+
+    <img src="https://img.youtube.com/vi/W9_GBEf2YDo/hqdefault.jpg"
+         class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+
+    <div class="absolute inset-0 flex items-center justify-center">
+        <span class="material-symbols-outlined text-white text-6xl">
+            play_circle
+        </span>
+    </div>
+
+</div>
+
+
+
+
+                    <!-- Contenido -->
+                    <div class="p-5 flex flex-col flex-1">
+                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">
+                            Serie: Culto dominical
+                        </div>
+
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">
+                            La unidad en la diversidad / culto dominical
+                        </h3>
+
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                            Descubre cómo mantener tu mirada en Jesús en medio de las tormentas de la vida.
+                            Una enseñanza sobre Mateo 14.
+                        </p>
+
+                        <div
+                            class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                            <span class="text-xs text-slate-500 font-medium">
+                                Pastor Carlos Ruiz
+                            </span>
+                            <span class="text-xs text-slate-400">
+                                14 Oct, 2023
+                            </span>
+                        </div>
+                    </div>
+
                 </article>
                 <article
                     class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
-                    <div class="relative aspect-video">
-                        <img alt="Abstract background representing hope and light" class="w-full h-full object-cover"
-                            data-alt="Abstract light background"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQLw2CJ3i-uoRE8cBhRdN1Pdtf4aDKEsiYZb99_FBxgQS7-R-vwzAnauq0N2yWWHXHKceMnuVg0HEzrKCRQghnCjaxJDgqKIwI1AwFPB2L69XCmxSMURkf018UqpFaMixNfMrGniHfINHYT7k4mXj0oJWyspJyRItz80jgr7AV-2uF42NXtQ9jQ_w6h6szta3J041uCNHMhqJ4WE65Dc_RTt3ZOhczU8O9hCzySMy4QtvD-AL9xVSeARYrxIDfXvbRT2JBKMEDikU" />
-                        <div
-                            class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                            <span
-                                class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
-                        </div>
-                    </div>
+
+                    <!-- Video -->
+                    
+                    <div class="relative aspect-video bg-black rounded-lg overflow-hidden group cursor-pointer"
+     onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/W9_GBEf2YDo?autoplay=1\' class=\'w-full h-full\' allowfullscreen></iframe>'">
+
+    <img src="https://img.youtube.com/vi/W9_GBEf2YDo/hqdefault.jpg"
+         class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+
+    <div class="absolute inset-0 flex items-center justify-center">
+        <span class="material-symbols-outlined text-white text-6xl">
+            play_circle
+        </span>
+    </div>
+
+</div>
+
+                    <!-- Contenido -->
                     <div class="p-5 flex flex-col flex-1">
-                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">Serie: Fe
-                            Inquebrantable</div>
-                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">El poder de la
-                            oración</h3>
+
+                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">
+                            Mensaje Reciente
+                        </div>
+
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">
+                            Predicación Dominical
+                        </h3>
+
                         <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
-                            La oración no es solo pedir, es conectar el cielo con la tierra. Aprende los principios de
-                            una vida de oración efectiva.
+                            Comparte y revive este poderoso mensaje que edificará tu vida y fortalecerá tu fe.
                         </p>
+
                         <div
                             class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
-                            <span class="text-xs text-slate-500 font-medium">Pastor Carlos Ruiz</span>
-                            <span class="text-xs text-slate-400">07 Oct, 2023</span>
+                            <span class="text-xs text-slate-500 font-medium">
+                                Iglesia Manantial Divino
+                            </span>
+                            <span class="text-xs text-slate-400">
+                                Febrero 2026
+                            </span>
                         </div>
+
                     </div>
+
                 </article>
-                <article
-                    class="min-w-[85vw] sm:min-w-[340px] md:min-w-0 flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow snap-center">
-                    <div class="relative aspect-video">
-                        <img alt="Group of people praying together" class="w-full h-full object-cover"
-                            data-alt="Community praying together"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrDonIYgfsq0ksAH-lvtPwZ2tDTwgYwpGigIbb_8lEtO3BxQw_rRqwQ_PcdrWc_fbsFG6YtDFQxgkrWIZIGDkmrSOLMAzw4KAPrkk6SB4YmKDLGxF9kTA4Gip1tMtA8GZz8vk4AkvqZjPvBcJ-pjFvRL6aTFoOHv6wxlszX0OnqtA8OVb02bmmoWfafhpMfS9dP1hD5DBeOIVa2OvOp_5CdnQlhorEujlA9cgF5woPC_-LwlnWpkGRt-g8gMeydAcBNPr1CiNv4-Q" />
-                        <div
-                            class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                            <span
-                                class="material-symbols-outlined text-white text-5xl drop-shadow-lg">play_circle</span>
-                        </div>
-                    </div>
-                    <div class="p-5 flex flex-col flex-1">
-                        <div class="text-xs font-semibold text-primary mb-2 uppercase tracking-wider">Estudio Bíblico
-                        </div>
-                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">El Evangelio de
-                            Juan</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
-                            Profundizando en el capítulo 3. ¿Qué significa realmente nacer de nuevo? Un estudio verso a
-                            verso.
-                        </p>
-                        <div
-                            class="mt-auto flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
-                            <span class="text-xs text-slate-500 font-medium">Hna. Maria Lopez</span>
-                            <span class="text-xs text-slate-400">01 Oct, 2023</span>
-                        </div>
-                    </div>
-                </article>
+
             </div>
         </div>
     </section>
-    <section class="w-full bg-white dark:bg-[#111827]">
+    <section id="IDSeccionContactos" class="w-full bg-white dark:bg-[#111827]">
 
         <!-- Encabezado -->
         <div class="text-center py-12 px-4">
-            <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-3">
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-3">
                 Visítanos
             </h2>
-            <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
                 Estamos listos para recibirte. Será un honor tenerte con nosotros.
             </p>
         </div>
 
-        <!-- Contactos -->
-        <div class="max-w-6xl mx-auto px-6 pb-12">
-            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <!-- Dirección + Teléfonos + Horarios -->
+        <div class="max-w-6xl mx-auto px-6 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
                 <!-- Dirección -->
-                <div>
+                <div class="text-center md:text-left">
                     <h3
-                        class="font-semibold text-lg text-slate-900 dark:text-white mb-2 flex items-center justify-center md:justify-start gap-2">
+                        class="font-semibold text-xl text-slate-900 dark:text-white mb-4 flex items-center justify-center md:justify-start gap-2">
                         <span class="material-symbols-outlined text-primary">location_on</span>
                         Dirección
                     </h3>
@@ -427,197 +551,118 @@
                     </p>
                 </div>
 
+                <!-- Teléfonos -->
+                <div class="text-center md:text-left">
+                    <h3
+                        class="font-semibold text-xl text-slate-900 dark:text-white mb-4 flex items-center justify-center md:justify-start gap-2">
+                        <span class="material-symbols-outlined text-primary">call</span>
+                        Teléfonos
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400">
+                        (809) 000-0000<br>
+                        (829) 000-0000
+                    </p>
+                </div>
 
                 <!-- Horarios -->
-                <div>
-                    <div class="text-center py-12 px-4">
-                        <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-3">
-                            Horarios
-                        </h2>
+                <div class="text-center md:text-left">
+                    <h3
+                        class="font-semibold text-xl text-slate-900 dark:text-white mb-6 flex items-center justify-center md:justify-start gap-2">
+                        <span class="material-symbols-outlined text-primary">schedule</span>
+                        Horarios
+                    </h3>
 
-                    </div>
+                    <div class="space-y-5 text-slate-600 dark:text-slate-400">
 
-                    <div class="space-y-4 text-slate-600 dark:text-slate-400">
-
-                        <!-- Domingo -->
                         <div>
-                            <p class="font-semibold text-slate-900 dark:text-white text-base mb-1">
-                                Domingo
-                            </p>
-                            <p class="text-sm">
-                                Escuela Bíblica
-                                <span class="font-medium text-slate-800 dark:text-slate-200">
-                                    9:30 AM – 10:30 AM
-                                </span>
-                            </p>
-                            <p class="text-sm">
-                                Culto Dominical
-                                <span class="font-medium text-slate-800 dark:text-slate-200">
-                                    10:30 AM – 12:00 PM
-                                </span>
-                            </p>
+                            <p class="font-semibold text-slate-900 dark:text-white mb-1">Domingo</p>
+                            <p class="text-sm">Escuela Bíblica 9:30 AM – 10:30 AM</p>
+                            <p class="text-sm">Culto Dominical 10:30 AM – 12:00 PM</p>
                         </div>
 
-                        <!-- Martes -->
                         <div>
-                            <p class="font-semibold text-slate-900 dark:text-white text-base mb-1">
-                                Martes
-                            </p>
-                            <p class="text-sm">
-                                Cultos Ministeriales
-                                <span class="font-medium text-slate-800 dark:text-slate-200">
-                                    7:00 PM – 9:00 PM
-                                </span>
-                            </p>
+                            <p class="font-semibold text-slate-900 dark:text-white mb-1">Martes</p>
+                            <p class="text-sm">Cultos Ministeriales 7:00 PM – 9:00 PM</p>
                         </div>
 
-                        <!-- Sábado -->
                         <div>
-                            <p class="font-semibold text-slate-900 dark:text-white text-base mb-1">
-                                Sábados
-                            </p>
-                            <p class="text-sm">
-                                Culto de Jóvenes
-                                <span class="font-medium text-slate-800 dark:text-slate-200">
-                                    7:00 PM – 9:00 PM
-                                </span>
-                            </p>
+                            <p class="font-semibold text-slate-900 dark:text-white mb-1">Sábados</p>
+                            <p class="text-sm">Culto de Jóvenes 7:00 PM – 9:00 PM</p>
                         </div>
 
                     </div>
                 </div>
-     
-
-                <div class="text-center py-12 px-4">
-                        <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-3">
-                            Estamos aqui
-                        </h2>
-  <!-- Flecha curva -->
-<div class="flex justify-center mt-4">
-    <svg viewBox="0 0 200 80"
-         class="w-40 text-red-500"
-         fill="none"
-         xmlns="http://www.w3.org/2000/svg">
-
-        <!-- Curva manuscrita -->
-        <path d="M20 20 
-                 C 40 60, 100 60, 140 40 
-                 S 190 30, 170 55"
-              stroke="currentColor"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-
-        <!-- Punta tipo dibujada -->
-        <path d="M160 48 
-                 Q170 55 175 60 
-                 Q165 55 155 58"
-              stroke="currentColor"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-    </svg>
-</div>
-   <section id="IDSeccionContactos">
-                    </div>
-                <!-- Mapa -->
-                <div class="w-full h-[50vh]">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6756691136284!2d-69.9232208230324!3d18.498344582591002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89a57377bb51%3A0xd6b985ed6a23bb1!2sIglesia%20de%20Dios%20Manantial%20Divino!5e0!3m2!1ses!2sdo!4v1770825729873!5m2!1ses!2sdo"
-                        class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-        
-                    <div class="text-center py-12 px-4">
-                        <h2 class="font-display font-bold text-3xl text-slate-900 dark:text-white mb-3">
-                            Contactos
-                        </h2>
-
-                    </div>
-                    <!-- Teléfonos -->
-                    <div>
-                        <h3
-                            class="font-semibold text-lg text-slate-900 dark:text-white mb-2 flex items-center justify-center md:justify-start gap-2">
-                            <span class="material-symbols-outlined text-primary">call</span>
-                            Teléfonos
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400">
-                            (809) 000-0000<br>
-                            (829) 000-0000
-                        </p>
-                    </div>
-
-                    <!-- Formulario de Peticiones -->
-<div class="max-w-4xl mx-auto px-6 pt-10 pb-16">
-    
-    <div class="bg-slate-50 dark:bg-gray-800 rounded-2xl shadow-lg p-8">
-
-        <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2 text-center">
-            Envíanos tu Petición
-        </h3>
-
-        <p class="text-slate-600 dark:text-slate-400 text-center mb-8 text-sm">
-            Puedes enviar tu petición de oración de manera anónima si así lo deseas.
-        </p>
-
-        <form class="space-y-6">
-
-            <!-- Nombre -->
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                    Nombre <span class="text-slate-400">(Opcional)</span>
-                </label>
-                <input type="text"
-                       placeholder="Puedes dejarlo en blanco si deseas ser anónimo"
-                       class="w-full rounded-lg border border-slate-300 dark:border-gray-600 bg-white dark:bg-gray-900 px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
-            </div>
-
-            <!-- Dirección -->
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                    Dirección <span class="text-slate-400">(Opcional)</span>
-                </label>
-                <input type="text"
-                       placeholder="Ej: Santo Domingo, República Dominicana"
-                       class="w-full rounded-lg border border-slate-300 dark:border-gray-600 bg-white dark:bg-gray-900 px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
-            </div>
-
-            <!-- Petición -->
-            <div>
-                <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                    Descríbenos tu petición <span class="text-red-500">*</span>
-                </label>
-                <textarea rows="5"
-                          required
-                          placeholder="Escribe aquí tu petición..."
-                          class="w-full rounded-lg border border-slate-300 dark:border-gray-600 bg-white dark:bg-gray-900 px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none"></textarea>
-            </div>
-
-            <!-- Botón -->
-            <div class="text-center">
-                <button type="submit"
-                        class="px-8 py-3 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition shadow-md">
-                    Enviar Petición
-                </button>
-            </div>
-
-        </form>
-
-    </div>
-</div>
-
-
-                </section>
 
             </div>
         </div>
 
 
+        <!-- Flecha + Título Mapa -->
+        <div id="IDSeccionMapa" class="text-center px-4 pb-12">
+            <h2 class="font-display font-bold text-2xl sm:text-3xl text-slate-900 dark:text-white mb-4">
+                Estamos aquí
+            </h2>
+
+            <div class="flex justify-center">
+                <svg viewBox="0 0 200 80" class="w-32 sm:w-40 text-red-500" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 20 C 40 60, 100 60, 140 40 S 190 30, 170 55" stroke="currentColor" stroke-width="4"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M160 48 Q170 55 175 60 Q165 55 155 58" stroke="currentColor" stroke-width="4"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="w-full h-[40vh] sm:h-[50vh] md:h-[60vh]">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6756691136284!2d-69.9232208230324!3d18.498344582591002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89a57377bb51%3A0xd6b985ed6a23bb1!2sIglesia%20de%20Dios%20Manantial%20Divino!5e0!3m2!1ses!2sdo!4v1770825729873!5m2!1ses!2sdo"
+                class="w-full h-full" style="border:0;" loading="lazy" allowfullscreen>
+            </iframe>
+        </div>
+
+
+
+        <!-- Formulario -->
+        <div class="max-w-4xl mx-auto px-6 mt-16 sm:mt-20 pb-20">
+            <div class="bg-slate-50 dark:bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8">
+
+                <h3 class="font-display font-bold text-2xl text-center text-slate-900 dark:text-white mb-6">
+                    Envíanos tu Petición
+                </h3>
+
+                <form class="space-y-6">
+
+                    <input type="text" placeholder="Nombre (Opcional)"
+                        class="w-full rounded-lg border px-4 py-3 dark:bg-gray-900">
+
+                    <input type="text" placeholder="Dirección (Opcional)"
+                        class="w-full rounded-lg border px-4 py-3 dark:bg-gray-900">
+
+                    <textarea rows="5" required placeholder="Describe tu petición..."
+                        class="w-full rounded-lg border px-4 py-3 dark:bg-gray-900 resize-none"></textarea>
+
+                    <button type="submit"
+                        class="w-full sm:w-auto px-8 py-3 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition">
+                        Enviar Petición
+                    </button>
+
+                </form>
+            </div>
+        </div>
 
     </section>
 
- <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
+
+    </div>
+    </div>
+
+
+
+    </section>
+
+    <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-12">
                 <div class="flex flex-col gap-4">
@@ -631,17 +676,17 @@
                         Llevando el mensaje de esperanza y amor a nuestra comunidad. Un lugar donde todos son
                         bienvenidos.
                     </p>
-                       <div class="flex justify-center gap-4">
-                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <i class="material-icons text-primary text-xl">facebook</i>
-                </div>
-                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <i class="material-icons text-primary text-xl">camera_alt</i>
-                </div>
-                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <i class="material-icons text-primary text-xl">email</i>
-                </div>
-            </div>
+                    <div class="flex justify-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">facebook</i>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">camera_alt</i>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">email</i>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-4">Explora</h3>
