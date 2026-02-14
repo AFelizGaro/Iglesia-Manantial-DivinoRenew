@@ -52,15 +52,23 @@
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .font-header { font-family: 'Montserrat', sans-serif; }
-        .ios-status-bar { height: 44px; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-header {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .ios-status-bar {
+            height: 44px;
+        }
     </style>
     <style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
     <style type="text/tailwindcss">
         @layer utilities {
             .no-scrollbar::-webkit-scrollbar {
@@ -76,25 +84,26 @@
 
 
 <body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased">
- <header
+    <header
         class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-100 dark:border-gray-800"
         x-data="{ open: false }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-              <a href="index.html"> <div class="flex items-center gap-3">
-                    <div class="flex-shrink-0 text-primary">
-                        <span class="flex shrink-0 items-center"><img src="img/logo-oficial.png" alt=""
-                                class="h-10 w-auto"></span>
+                <a href="index.html">
+                    <div class="flex items-center gap-3">
+                        <div class="flex-shrink-0 text-primary">
+                            <span class="flex shrink-0 items-center"><img src="img/logo-oficial.png" alt=""
+                                    class="h-10 w-auto"></span>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1
+                                class="font-display font-bold text-lg sm:text-xl leading-none tracking-tight text-slate-900 dark:text-white">
+                                Iglesia de Dios</h1>
+                            <span
+                                class="text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase">Manantial
+                                Divino</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col">
-                        <h1
-                            class="font-display font-bold text-lg sm:text-xl leading-none tracking-tight text-slate-900 dark:text-white">
-                            Iglesia de Dios</h1>
-                        <span
-                            class="text-xs font-medium text-slate-500 dark:text-slate-400 tracking-wider uppercase">Manantial
-                            Divino</span>
-                    </div>
-                </div>
                 </a>
                 <nav class="hidden md:flex items-center gap-6 lg:gap-8">
                     <a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
@@ -154,125 +163,116 @@
             </div>
         </div>
     </header>
-        <!-- Hero Section -->
-        <section class="relative h-64 flex items-end overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
-            <img data-aos="fade-up" alt="Faith community gathering" class="absolute inset-0 w-full h-full object-cover"
-                data-alt="Group of people praying together in harmony"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJhW99zWB0pwwo8K5D4shVO_LY4YwaGOFk7owrI3rYJMGnvrXhqplEAErPwm9CmuDT5oILhYehODRjvsOiyhiEEmFHgDoD7LsjR7d36iZTa75hTYWlcRwGcGgY9gVLv2SiD-_3IN8yjzNmfZDMaQCOJj35tJF_DntMCOANkX12cfDVk9E2CjNP1FJXpWSgofWFPF0AD3Xrw1p5TH_vyR_6tYRDWwv02hFucKnmxOMyRDYL5Xt62L0FGlYH97o5vH1SI0fdydTBRrQ" />
-            <div class="relative z-20 px-6 pb-8">
-                <h1 data-aos="zoom-in" class="font-header text-3xl text-white leading-tight">Nuestros<br />Ministerios</h1>
-                <div  class="h-1 w-12 bg-accent-red mt-2 rounded-full"></div>
+    <!-- Hero Section -->
+    <section class="relative h-64 flex items-end overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+        <img data-aos="fade-up" alt="Faith community gathering" class="absolute inset-0 w-full h-full object-cover"
+            data-alt="Group of people praying together in harmony"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJhW99zWB0pwwo8K5D4shVO_LY4YwaGOFk7owrI3rYJMGnvrXhqplEAErPwm9CmuDT5oILhYehODRjvsOiyhiEEmFHgDoD7LsjR7d36iZTa75hTYWlcRwGcGgY9gVLv2SiD-_3IN8yjzNmfZDMaQCOJj35tJF_DntMCOANkX12cfDVk9E2CjNP1FJXpWSgofWFPF0AD3Xrw1p5TH_vyR_6tYRDWwv02hFucKnmxOMyRDYL5Xt62L0FGlYH97o5vH1SI0fdydTBRrQ" />
+        <div class="relative z-20 px-6 pb-8">
+            <h1 data-aos="zoom-in" class="font-header text-3xl text-white leading-tight">Nuestros<br />Ministerios</h1>
+            <div class="h-1 w-12 bg-accent-red mt-2 rounded-full"></div>
+        </div>
+    </section>
+    <!-- Introduction -->
+    <section class="px-6 py-8">
+        <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+            <h2 class="font-header text-lg text-primary mb-3">El Propósito de Servir</h2>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                Creemos que cada miembro tiene un don especial para bendecir a otros. En Manantial Divino, servimos
+                con amor y excelencia para impactar nuestra comunidad en Santo Domingo.
+            </p>
+        </div>
+    </section>
+    <!-- Ministry Grid -->
+    <section class="px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Ministry Card 1 -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-40 relative">
+                <img alt="Youth ministry group" class="w-full h-full object-cover"
+                    data-alt="Group of joyful young people cheering together"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwX0bN5_ic1VjQBH4ooB1jJ2YDcRl3YqQFe_RJqEtYdNhCSXoDGsbTE-YS545JtHGHmDFK700xhW-3ixAyGz9zB0KVgSm9NtdvuHw-LjXSWVqfHV6AO1aSByC_SQkCs_INohCmdi0kAnqxseHuBRHyRLfZt46EW1UKIkAg2XIuWGSEvzVf7eg5Mtcz0j9M1-tvAFcy8N4ry9VruCPeel6opL4SJ6Rl9jteS_xjHRjsU0F0IR7fxCakfVgEK6GadqyTGTMrfoGd-BM" />
+                <div class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                    <span class="material-symbols-outlined text-sm">groups</span>
+                </div>
             </div>
-        </section>
-        <!-- Introduction -->
-        <section class="px-6 py-8">
-            <div
-                class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
-                <h2 class="font-header text-lg text-primary mb-3">El Propósito de Servir</h2>
-                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                    Creemos que cada miembro tiene un don especial para bendecir a otros. En Manantial Divino, servimos
-                    con amor y excelencia para impactar nuestra comunidad en Santo Domingo.
+            <div class="p-5">
+                <h3 class="font-header text-lg mb-2">Jóvenes</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                    Guiando a la nueva generación a encontrar su identidad y propósito en Cristo.
                 </p>
+                <button
+                    class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                    Saber más
+                </button>
             </div>
-        </section>
-        <!-- Ministry Grid -->
-        <section class="px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Ministry Card 1 -->
-            <div
-                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div class="h-40 relative">
-                    <img alt="Youth ministry group" class="w-full h-full object-cover"
-                        data-alt="Group of joyful young people cheering together"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwX0bN5_ic1VjQBH4ooB1jJ2YDcRl3YqQFe_RJqEtYdNhCSXoDGsbTE-YS545JtHGHmDFK700xhW-3ixAyGz9zB0KVgSm9NtdvuHw-LjXSWVqfHV6AO1aSByC_SQkCs_INohCmdi0kAnqxseHuBRHyRLfZt46EW1UKIkAg2XIuWGSEvzVf7eg5Mtcz0j9M1-tvAFcy8N4ry9VruCPeel6opL4SJ6Rl9jteS_xjHRjsU0F0IR7fxCakfVgEK6GadqyTGTMrfoGd-BM" />
-                    <div
-                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
-                        <span class="material-symbols-outlined text-sm">groups</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <h3 class="font-header text-lg mb-2">Jóvenes</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
-                        Guiando a la nueva generación a encontrar su identidad y propósito en Cristo.
-                    </p>
-                    <button
-                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
-                        Saber más
-                    </button>
+        </div>
+        <!-- Ministry Card 2 -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-40 relative">
+                <img alt="Children ministry" class="w-full h-full object-cover"
+                    data-alt="Teacher and kids playing and learning"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLkB_z2gX-NbV9NzUw8ch-4DMPSQmPU7k4v0Fd1ztX0Ok6LfaquLARSfEaxQIkm4N7lzDW5DkwKK5gVZwwUVR0mPTNYtzjwvo0A_kRiKU5lA3bC-hiKSNnJ8V0Q2eNL_912XZK8INyNTDQtRfyS8euGBHZi-sPck4RizkooW0QINY_RRya6ZiwFK8wGbPGLAwSufKQe4LicR11otHmPV_s_N81Xrt8H2lfUtrge6T4I3BuxJXZo0RexAl5w1PU2GgHCz-1WQv8vo" />
+                <div class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                    <span class="material-symbols-outlined text-sm">child_care</span>
                 </div>
             </div>
-            <!-- Ministry Card 2 -->
-            <div
-                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div class="h-40 relative">
-                    <img alt="Children ministry" class="w-full h-full object-cover"
-                        data-alt="Teacher and kids playing and learning"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLkB_z2gX-NbV9NzUw8ch-4DMPSQmPU7k4v0Fd1ztX0Ok6LfaquLARSfEaxQIkm4N7lzDW5DkwKK5gVZwwUVR0mPTNYtzjwvo0A_kRiKU5lA3bC-hiKSNnJ8V0Q2eNL_912XZK8INyNTDQtRfyS8euGBHZi-sPck4RizkooW0QINY_RRya6ZiwFK8wGbPGLAwSufKQe4LicR11otHmPV_s_N81Xrt8H2lfUtrge6T4I3BuxJXZo0RexAl5w1PU2GgHCz-1WQv8vo" />
-                    <div
-                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
-                        <span class="material-symbols-outlined text-sm">child_care</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <h3 class="font-header text-lg mb-2">Niños</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
-                        Formando corazones desde la infancia con principios bíblicos y mucha alegría.
-                    </p>
-                    <button
-                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
-                        Saber más
-                    </button>
+            <div class="p-5">
+                <h3 class="font-header text-lg mb-2">Niños</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                    Formando corazones desde la infancia con principios bíblicos y mucha alegría.
+                </p>
+                <button
+                    class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                    Saber más
+                </button>
+            </div>
+        </div>
+        <!-- Ministry Card 3 -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-40 relative">
+                <img alt="Worship team" class="w-full h-full object-cover"
+                    data-alt="Musical instruments and stage lighting in church"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dwzlukAXgn8keSR-Iy3Ly_YeT4VvTP5YW7gKLLyP7Loy-OrllErCVM0__E4VOL-cxMN4d0ZOjQQamqoJZerXNz0kZt0duvUeZppMNcuz5qLltM2mKjymkecscGNayzXhfZJy2esgKz4Qcn-hOzUTzaYkN9LFow_XX24jlv5hh5TZUMCryFOEW05RZFlyTSh3XTGC3-6Ry0-oYRmsRQugJe7LI343E4734fRy6WPdKa2j0OxDj-nxURceaPxFfGp0TIMe6J5ZgY8" />
+                <div class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                    <span class="material-symbols-outlined text-sm">music_note</span>
                 </div>
             </div>
-            <!-- Ministry Card 3 -->
-            <div
-                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div class="h-40 relative">
-                    <img alt="Worship team" class="w-full h-full object-cover"
-                        data-alt="Musical instruments and stage lighting in church"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dwzlukAXgn8keSR-Iy3Ly_YeT4VvTP5YW7gKLLyP7Loy-OrllErCVM0__E4VOL-cxMN4d0ZOjQQamqoJZerXNz0kZt0duvUeZppMNcuz5qLltM2mKjymkecscGNayzXhfZJy2esgKz4Qcn-hOzUTzaYkN9LFow_XX24jlv5hh5TZUMCryFOEW05RZFlyTSh3XTGC3-6Ry0-oYRmsRQugJe7LI343E4734fRy6WPdKa2j0OxDj-nxURceaPxFfGp0TIMe6J5ZgY8" />
-                    <div
-                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
-                        <span class="material-symbols-outlined text-sm">music_note</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <h3 class="font-header text-lg mb-2">Alabanza</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
-                        Exaltando el nombre de Dios a través de la música y la adoración profunda.
-                    </p>
-                    <button
-                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
-                        Saber más
-                    </button>
+            <div class="p-5">
+                <h3 class="font-header text-lg mb-2">Alabanza</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                    Exaltando el nombre de Dios a través de la música y la adoración profunda.
+                </p>
+                <button
+                    class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                    Saber más
+                </button>
+            </div>
+        </div>
+        <!-- Ministry Card 4 -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-40 relative">
+                <img alt="Community service" class="w-full h-full object-cover"
+                    data-alt="People helping others in a community center"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcFlfxf3iAjsjCBeoYG8BIIXbkfCdqBFEjbxDof8IGgy0u_R0AQGvw-XD1yGKhNJi0xrvumxQByqVG447RlBudtIdF3pFCSDEjpDia7ZyTe7aOQbD85o649BY2SEt4_yScPX0Cld3W6CEcti7TYuvLCLXD7FT7-KF9iQtP2UQP2yRi5mAT3O_JYrS_JhvL5uSP7OiESb6YFyK3hT0VT84oXNR75E1DXZBr0xOySLFujDAkCiYXp0HjPP2fspkh4uJmQVqUAbnZEEg" />
+                <div class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
+                    <span class="material-symbols-outlined text-sm">volunteer_activism</span>
                 </div>
             </div>
-            <!-- Ministry Card 4 -->
-            <div
-                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div class="h-40 relative">
-                    <img alt="Community service" class="w-full h-full object-cover"
-                        data-alt="People helping others in a community center"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcFlfxf3iAjsjCBeoYG8BIIXbkfCdqBFEjbxDof8IGgy0u_R0AQGvw-XD1yGKhNJi0xrvumxQByqVG447RlBudtIdF3pFCSDEjpDia7ZyTe7aOQbD85o649BY2SEt4_yScPX0Cld3W6CEcti7TYuvLCLXD7FT7-KF9iQtP2UQP2yRi5mAT3O_JYrS_JhvL5uSP7OiESb6YFyK3hT0VT84oXNR75E1DXZBr0xOySLFujDAkCiYXp0HjPP2fspkh4uJmQVqUAbnZEEg" />
-                    <div
-                        class="absolute top-3 right-3 bg-primary/90 text-white p-2 rounded-full leading-none shadow-lg">
-                        <span class="material-symbols-outlined text-sm">volunteer_activism</span>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <h3 class="font-header text-lg mb-2">Damas &amp; Caballeros</h3>
-                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
-                        Crecimiento espiritual y apoyo mutuo para adultos en todas sus etapas.
-                    </p>
-                    <button
-                        class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
-                        Saber más
-                    </button>
-                </div>
+            <div class="p-5">
+                <h3 class="font-header text-lg mb-2">Damas &amp; Caballeros</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
+                    Crecimiento espiritual y apoyo mutuo para adultos en todas sus etapas.
+                </p>
+                <button
+                    class="w-full py-2.5 bg-primary text-white font-semibold text-xs rounded-full hover:bg-primary/90 transition-colors">
+                    Saber más
+                </button>
             </div>
-        </section>
-        <!-- CTA Section -->
-        <!-- <section class="mt-12 px-6">
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <!-- <section class="mt-12 px-6">
             <div class="bg-primary/10 dark:bg-primary/20 rounded-xl p-8 text-center relative overflow-hidden">
               
                 <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full"></div>
@@ -289,8 +289,8 @@
             </div>
         </section>
         -->
-   
-  <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
+
+    <footer class="bg-white dark:bg-background-dark pt-12 md:pt-16 border-t border-gray-200 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-12">
                 <div class="flex flex-col gap-4">
@@ -304,17 +304,17 @@
                         Llevando el mensaje de esperanza y amor a nuestra comunidad. Un lugar donde todos son
                         bienvenidos.
                     </p>
-                       <div class="flex justify-center gap-4">
-                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <i class="material-icons text-primary text-xl">facebook</i>
-                </div>
-                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <i class="material-icons text-primary text-xl">camera_alt</i>
-                </div>
-                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <i class="material-icons text-primary text-xl">email</i>
-                </div>
-            </div>
+                    <div class="flex justify-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">facebook</i>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">camera_alt</i>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i class="material-icons text-primary text-xl">email</i>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <h3 class="font-bold text-slate-900 dark:text-white mb-4">Explora</h3>
@@ -346,7 +346,7 @@
             </div>
         </div>
     </footer>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 900,
