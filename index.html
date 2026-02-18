@@ -142,41 +142,77 @@
             </div>
         </div>
     </header>
-    <section
-        class="relative w-full min-h-[500px] h-[600px] lg:h-[700px] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30 z-10"></div>
-            <img alt="Worship service with raised hands in spiritual atmosphere" class="w-full h-full object-cover"
-                data-alt="People raising hands in worship service with warm lighting" src="img/img-0.jpg" />
-        </div>
-        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center gap-6 md:gap-8">
-            <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/10 mb-2">
-                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                <span class="text-xs font-semibold text-white tracking-wide uppercase">En vivo este domingo</span>
+    <section class="relative w-full min-h-[500px] h-[600px] lg:h-[700px] overflow-hidden">
+
+        <!-- Slides -->
+        <div id="heroCarousel" class="absolute inset-0">
+
+            <!-- Slide 1 -->
+            <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+                <img src="img/img-0.jpg" class="w-full h-full object-cover" alt="Worship service">
             </div>
-            <h1 data-aos="zoom-in"
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="img/img-1.jpg" class="w-full h-full object-cover" alt="Iglesia adorando">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="img/img-2.jpg" class="w-full h-full object-cover" alt="Familia en iglesia">
+            </div>
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Contenido -->
+        <div
+            class="relative z-20 h-full flex items-center justify-center text-center px-4 max-w-4xl mx-auto flex-col gap-6 md:gap-8">
+
+            <div
+                class="hidden inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/10 mb-2">
+                <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                <span class="text-xs font-semibold text-white tracking-wide uppercase">
+                    En vivo este domingo
+                </span>
+            </div>
+
+            <h1
                 class="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-white tracking-tight drop-shadow-sm">
-                Somos una iglesia <br /><span class="text-blue-300">de familia</span>
+                Somos una iglesia <br />
+                <span class="text-blue-300">de familia</span>
             </h1>
-            <p data-aos="fade-up"
-                class="text-base sm:text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed px-4">
-                Bienvenidos a casa. Somos una iglesia para toda la familia, donde crecemos juntos en fe, amor y unidad,
-                construyendo vidas transformadas en Cristo.
+
+            <p class="text-base sm:text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed px-4">
+                Bienvenidos a casa. Somos una iglesia para toda la familia, donde crecemos juntos en fe,
+                amor y unidad, construyendo vidas transformadas en Cristo.
+            </p>
+
             <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center px-4 sm:px-0">
                 <a target="_blank" href="https://www.youtube.com/@iglesiadediosmanantialdivino/streams"
                     class="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-bold text-lg hover:bg-primary-dark transition-all shadow-lg shadow-blue-600/40 w-full sm:w-auto group">
                     <span class="material-symbols-outlined group-hover:animate-pulse">live_tv</span>
                     Ver transmisiones
                 </a>
+
                 <a href="#IDSeccionContactos"
                     class="flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/30 text-white font-bold text-lg hover:bg-white hover:text-slate-900 transition-all w-full sm:w-auto">
                     <span class="material-symbols-outlined">mail</span>
                     Contáctanos
                 </a>
             </div>
+
+            <!-- Indicadores -->
+            <div class="absolute bottom-8 flex gap-3">
+                <button class="indicator w-3 h-3 rounded-full bg-white/70"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-white/40"></button>
+                <button class="indicator w-3 h-3 rounded-full bg-white/40"></button>
+            </div>
+
         </div>
     </section>
+
     <section class="py-16 md:py-20 bg-white dark:bg-background-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
@@ -263,10 +299,11 @@
                 <div
                     class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group">
 
-                    <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                    <div class="w-full lg:w-3/5 relative aspect-[16/9] overflow-hidden">
+
                         <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10">
                         </div>
-                        <img src="img/img-2.jpg"
+                        <img src="https://instagram.fsti8-1.fna.fbcdn.net/v/t51.75761-15/488262738_18290433109300965_3967072975163483592_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzYwMTU1MDE0Mjg4OTk4MzMwMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNjR4MTU4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=vtJb3FSY8IIQ7kNvwF9aAMS&_nc_oc=AdkqenJAtuUydkawxX2SxOT3fB_mwvooJBWNc_IukCW9bBdOaGkmTGcZni0MhOaJnYU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsti8-1.fna&_nc_gid=cqxM1z6_YsLacMoT-9zlMg&oh=00_Afv2lziGhQRWzMhoLzn3Aw00fnLK_7Wj-oCv4Lx2FsyEBA&oe=699681F1"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                             alt="Crucero de Familia">
 
@@ -298,7 +335,8 @@
                 <div
                     class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group">
 
-                    <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                    <div class="w-full lg:w-3/5 relative aspect-[16/9] overflow-hidden">
+
                         <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10">
                         </div>
                         <img src="img/img-2.jpg"
@@ -333,12 +371,13 @@
                 <div
                     class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row group">
 
-                    <div class="w-full lg:w-3/5 relative h-64 sm:h-80 lg:h-auto overflow-hidden">
+                    <div class="w-full lg:w-3/5 relative aspect-[16/9] overflow-hidden">
+
                         <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors z-10">
                         </div>
-                        <img src="img/img-2.jpg"
+                        <img src="https://elsoldelasamericas.com.do/wp-content/uploads/2025/04/Eli-Liriano.jpg"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                            alt="Taller de Oratoria">
+                            alt="Taller de Locución">
 
                         <div
                             class="absolute top-4 left-4 z-20 bg-white dark:bg-gray-900 rounded-lg px-4 py-2 text-center shadow-lg">
@@ -708,13 +747,13 @@
                     <h3 class="font-bold text-slate-900 dark:text-white mb-4">Explora</h3>
                     <ul class="space-y-3">
                         <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-                                href="#">Quiénes Somos</a></li>
+                                href="Nosotros.html">Quiénes Somos</a></li>
                         <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-                                href="#">Nuestros Pastores</a></li>
+                                href="Nosotros.html#pastores">Nuestros Pastores</a></li>
                         <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
                                 href="Ministerios.html">Ministerios</a></li>
                         <li><a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors"
-                                href="#">Peticiones de Oración</a></li>
+                                href="index.html#IDSeccionContactos">Peticiones de Oración</a></li>
                     </ul>
                 </div>
 
@@ -727,9 +766,9 @@
                 </p>
                 <div class="flex gap-6">
                     <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
-                        href="#">Privacidad</a>
+                        href="Nosotros.html#privacidad">Privacidad</a>
                     <a class="text-sm text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors"
-                        href="#">Términos</a>
+                        href="Nosotros.html#terminos">Términos</a>
                 </div>
             </div>
         </div>
@@ -850,6 +889,32 @@
             }
         });
     </script>
+    <script>
+        const slides = document.querySelectorAll(".carousel-slide");
+        const indicators = document.querySelectorAll(".indicator");
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? "1" : "0";
+                indicators[i].classList.toggle("bg-white/70", i === index);
+                indicators[i].classList.toggle("bg-white/40", i !== index);
+            });
+            current = index;
+        }
+
+        function nextSlide() {
+            let next = (current + 1) % slides.length;
+            showSlide(next);
+        }
+
+        setInterval(nextSlide, 3500);
+
+        indicators.forEach((btn, index) => {
+            btn.addEventListener("click", () => showSlide(index));
+        });
+    </script>
+
 
 </body>
 
